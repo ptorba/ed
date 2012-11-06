@@ -1,0 +1,3361 @@
+<gexf xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.1draft" xmlns:ns0="xsi" version="1.1" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.1draft.xsd">
+  <meta lastmodified="2012-11-06T18:07:29.735506">
+    <creator>ED</creator>
+    <description>ED test</description>
+  </meta>
+  <graph defaultedgetype="undirected" label="a test graph" mode="static">
+    <attributes class="node" mode="dynamic"/>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="count" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <attributes class="edge" mode="dynamic"/>
+    <attributes class="edge" mode="static"/>
+    <nodes>
+      <node id="chain" label="chain">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="demand" label="demand">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="four" label="four">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="protest" label="protest">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="skin" label="skin">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="go" label="go">
+        <attvalues>
+          <attvalue for="0" value="8"/>
+        </attvalues>
+      </node>
+      <node id="whose" label="whose">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="honoring" label="honoring">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="concerned" label="concerned">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="father" label="father">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="sunlit" label="sunlit">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="sweltering" label="sweltering">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="ti" label="ti">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="redemptive" label="redemptive">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="fatal" label="fatal">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="exalted" label="exalted">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="horror" label="horror">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="rise" label="rise">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="languished" label="languished">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="every" label="every">
+        <attvalues>
+          <attvalue for="0" value="10"/>
+        </attvalues>
+      </node>
+      <node id="fall" label="fall">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="word" label="word">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="drinking" label="drinking">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="condition" label="condition">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="brother" label="brother">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="red" label="red">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="whirlwind" label="whirlwind">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="spiritual" label="spiritual">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="smaller" label="smaller">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="force" label="force">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="pledge" label="pledge">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="sign" label="sign">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="even" label="even">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="deeply" label="deeply">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="liberty" label="liberty">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="cell" label="cell">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="conduct" label="conduct">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="new" label="new">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="nullification" label="nullification">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="body" label="body">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="promissory" label="promissory">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="devotee" label="devotee">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="men" label="men">
+        <attvalues>
+          <attvalue for="0" value="6"/>
+        </attvalues>
+      </node>
+      <node id="water" label="water">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="beacon" label="beacon">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="poverty" label="poverty">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="pursuit" label="pursuit">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="crippled" label="crippled">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="alone" label="alone">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="path" label="path">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="momentous" label="momentous">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="boy" label="boy">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="great" label="great">
+        <attvalues>
+          <attvalue for="0" value="5"/>
+        </attvalues>
+      </node>
+      <node id="engage" label="engage">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="ahead" label="ahead">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="changed" label="changed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="guilty" label="guilty">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="trial" label="trial">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="narrow" label="narrow">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="dramatize" label="dramatize">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="daybreak" label="daybreak">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="mobility" label="mobility">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="marked" label="marked">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="marvelous" label="marvelous">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="lodging" label="lodging">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="would" label="would">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="joyous" label="joyous">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="live" label="live">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="symphony" label="symphony">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="tribulation" label="tribulation">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="today" label="today">
+        <attvalues>
+          <attvalue for="0" value="9"/>
+        </attvalues>
+      </node>
+      <node id="heir" label="heir">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="stone" label="stone">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="warm" label="warm">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="midst" label="midst">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="hold" label="hold">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="must" label="must">
+        <attvalues>
+          <attvalue for="0" value="8"/>
+        </attvalues>
+      </node>
+      <node id="autumn" label="autumn">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="pride" label="pride">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="join" label="join">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="interposition" label="interposition">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="work" label="work">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="soul" label="soul">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="obvious" label="obvious">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="island" label="island">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="history" label="history">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="beautiful" label="beautiful">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="stream" label="stream">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="give" label="give">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="process" label="process">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="dripping" label="dripping">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="high" label="high">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="something" label="something">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="degenerate" label="degenerate">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="sense" label="sense">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="end" label="end">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="bankrupt" label="bankrupt">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="democracy" label="democracy">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="sit" label="sit">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="travel" label="travel">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="owner" label="owner">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="sacred" label="sacred">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="rude" label="rude">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="battered" label="battered">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="spot" label="spot">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="vicious" label="vicious">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="tied" label="tied">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="plane" label="plane">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="fatigue" label="fatigue">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="revealed" label="revealed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="refuse" label="refuse">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="light" label="light">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="revolt" label="revolt">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="jail" label="jail">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="allow" label="allow">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="insofar" label="insofar">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="hilltop" label="hilltop">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="dream" label="dream">
+        <attvalues>
+          <attvalue for="0" value="11"/>
+        </attvalues>
+      </node>
+      <node id="granted" label="granted">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="wind" label="wind">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="tranquilizing" label="tranquilizing">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="satisfied" label="satisfied">
+        <attvalues>
+          <attvalue for="0" value="8"/>
+        </attvalues>
+      </node>
+      <node id="shake" label="shake">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="still" label="still">
+        <attvalues>
+          <attvalue for="0" value="4"/>
+        </attvalues>
+      </node>
+      <node id="police" label="police">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="pray" label="pray">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="vast" label="vast">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="lonely" label="lonely">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="return" label="return">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="mountainside" label="mountainside">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="thee" label="thee">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="material" label="material">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="nation" label="nation">
+        <attvalues>
+          <attvalue for="0" value="11"/>
+        </attvalues>
+      </node>
+      <node id="shameful" label="shameful">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="day" label="day">
+        <attvalues>
+          <attvalue for="0" value="12"/>
+        </attvalues>
+      </node>
+      <node id="bank" label="bank">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="equality" label="equality">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="always" label="always">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="truth" label="truth">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="rock" label="rock">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="heavy" label="heavy">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="signing" label="signing">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="society" label="society">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="year" label="year">
+        <attvalues>
+          <attvalue for="0" value="5"/>
+        </attvalues>
+      </node>
+      <node id="girl" label="girl">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="emerges" label="emerges">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="decree" label="decree">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="motel" label="motel">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="thirst" label="thirst">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="content" label="content">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="hill" label="hill">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="sweet" label="sweet">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="highway" label="highway">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="foundation" label="foundation">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="belief" label="belief">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="withering" label="withering">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="million" label="million">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="little" label="little">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="free" label="free">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="difficulty" label="difficulty">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="oasis" label="oasis">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="struggle" label="struggle">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="obligation" label="obligation">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="beginning" label="beginning">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="jangling" label="jangling">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="created" label="created">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="turn" label="turn">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="place" label="place">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="staggered" label="staggered">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="rooted" label="rooted">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="symbolic" label="symbolic">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="one" label="one">
+        <attvalues>
+          <attvalue for="0" value="10"/>
+        </attvalues>
+      </node>
+      <node id="vote" label="vote">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="ring" label="ring">
+        <attvalues>
+          <attvalue for="0" value="12"/>
+        </attvalues>
+      </node>
+      <node id="tomorrow" label="tomorrow">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="hood" label="hood">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="city" label="city">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="given" label="given">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="sadly" label="sadly">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="hallowed" label="hallowed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="needed" label="needed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="cooling" label="cooling">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="storm" label="storm">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="white" label="white">
+        <attvalues>
+          <attvalue for="0" value="6"/>
+        </attvalues>
+      </node>
+      <node id="hundred" label="hundred">
+        <attvalues>
+          <attvalue for="0" value="4"/>
+        </attvalues>
+      </node>
+      <node id="militancy" label="militancy">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="friend" label="friend">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="hotel" label="hotel">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="negro" label="negro">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="defaulted" label="defaulted">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="prodigious" label="prodigious">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="believe" label="believe">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="bitterness" label="bitterness">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="flame" label="flame">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="palace" label="palace">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="gradualism" label="gradualism">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="say" label="say">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="seek" label="seek">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="heightening" label="heightening">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="prosperity" label="prosperity">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="veteran" label="veteran">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="able" label="able">
+        <attvalues>
+          <attvalue for="0" value="8"/>
+        </attvalues>
+      </node>
+      <node id="snow" label="snow">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="note" label="note">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="also" label="also">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="lip" label="lip">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="take" label="take">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="though" label="though">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="unmindful" label="unmindful">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="nothing" label="nothing">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="forever" label="forever">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="later" label="later">
+        <attvalues>
+          <attvalue for="0" value="4"/>
+        </attvalues>
+      </node>
+      <node id="face" label="face">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="usual" label="usual">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="urgency" label="urgency">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="segregation" label="segregation">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="slope" label="slope">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="discontent" label="discontent">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="hamlet" label="hamlet">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="bright" label="bright">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="threshold" label="threshold">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="corner" label="corner">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="rough" label="rough">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="find" label="find">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="northern" label="northern">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="justice" label="justice">
+        <attvalues>
+          <attvalue for="0" value="8"/>
+        </attvalues>
+      </node>
+      <node id="manacle" label="manacle">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="discord" label="discord">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="black" label="black">
+        <attvalues>
+          <attvalue for="0" value="4"/>
+        </attvalues>
+      </node>
+      <node id="judged" label="judged">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="rich" label="rich">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="hope" label="hope">
+        <attvalues>
+          <attvalue for="0" value="4"/>
+        </attvalues>
+      </node>
+      <node id="righteousness" label="righteousness">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="capital" label="capital">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="cannot" label="cannot">
+        <attvalues>
+          <attvalue for="0" value="6"/>
+        </attvalues>
+      </node>
+      <node id="legitimate" label="legitimate">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="ghetto" label="ghetto">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="seared" label="seared">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="glory" label="glory">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="bad" label="bad">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="steam" label="steam">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="wrote" label="wrote">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="satisfy" label="satisfy">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="see" label="see">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="molehill" label="molehill">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="destiny" label="destiny">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="crooked" label="crooked">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="unalienable" label="unalienable">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="state" label="state">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="score" label="score">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="injustice" label="injustice">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="architect" label="architect">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="neither" label="neither">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="knowing" label="knowing">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="discipline" label="discipline">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="never" label="never">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="inextricably" label="inextricably">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="come" label="come">
+        <attvalues>
+          <attvalue for="0" value="10"/>
+        </attvalues>
+      </node>
+      <node id="last" label="last">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="many" label="many">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="equal" label="equal">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="drug" label="drug">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="vault" label="vault">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="color" label="color">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="character" label="character">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="community" label="community">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="height" label="height">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="sing" label="sing">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="majestic" label="majestic">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="table" label="table">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="discrimination" label="discrimination">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="overlook" label="overlook">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="three" label="three">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="basic" label="basic">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="meeting" label="meeting">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="life" label="life">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="robbed" label="robbed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="fund" label="fund">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="lift" label="lift">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="child" label="child">
+        <attvalues>
+          <attvalue for="0" value="5"/>
+        </attvalues>
+      </node>
+      <node id="former" label="former">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="captivity" label="captivity">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="solid" label="solid">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="plain" label="plain">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="straight" label="straight">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="cash" label="cash">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="governor" label="governor">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="country" label="country">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="situation" label="situation">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="larger" label="larger">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="unearned" label="unearned">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="ve" label="ve">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="awakening" label="awakening">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="exile" label="exile">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="pas" label="pas">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="let" label="let">
+        <attvalues>
+          <attvalue for="0" value="4"/>
+        </attvalues>
+      </node>
+      <node id="demonstration" label="demonstration">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="make" label="make">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="slave" label="slave">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="mountain" label="mountain">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="upon" label="upon">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="hand" label="hand">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="moment" label="moment">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="fierce" label="fierce">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="opportunity" label="opportunity">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="well" label="well">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="ocean" label="ocean">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="greatest" label="greatest">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="stating" label="stating">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="left" label="left">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="summer" label="summer">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="desolate" label="desolate">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="flesh" label="flesh">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="rest" label="rest">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="victim" label="victim">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="yes" label="yes">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="speed" label="speed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="blow" label="blow">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="cup" label="cup">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="guaranteed" label="guaranteed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="realize" label="realize">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="transformed" label="transformed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="citizen" label="citizen">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="engulfed" label="engulfed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="luxury" label="luxury">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="real" label="real">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="march" label="march">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="dark" label="dark">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="suffering" label="suffering">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="quest" label="quest">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="quicksand" label="quicksand">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="shadow" label="shadow">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="walk" label="walk">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="like" label="like">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="dignity" label="dignity">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="brutality" label="brutality">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="wrongful" label="wrongful">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="remind" label="remind">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="distrust" label="distrust">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="continue" label="continue">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="night" label="night">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="become" label="become">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="security" label="security">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="right" label="right">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="old" label="old">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="people" label="people">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="creed" label="creed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="village" label="village">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="magnificent" label="magnificent">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="back" label="back">
+        <attvalues>
+          <attvalue for="0" value="9"/>
+        </attvalues>
+      </node>
+      <node id="self" label="self">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="mighty" label="mighty">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="racial" label="racial">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="happens" label="happens">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="lead" label="lead">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="shall" label="shall">
+        <attvalues>
+          <attvalue for="0" value="5"/>
+        </attvalues>
+      </node>
+      <node id="creative" label="creative">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="asking" label="asking">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="curvaceous" label="curvaceous">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="business" label="business">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="slum" label="slum">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="sixty" label="sixty">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="faith" label="faith">
+        <attvalues>
+          <attvalue for="0" value="5"/>
+        </attvalues>
+      </node>
+      <node id="sister" label="sister">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="freedom" label="freedom">
+        <attvalues>
+          <attvalue for="0" value="20"/>
+        </attvalues>
+      </node>
+      <node id="violence" label="violence">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="despair" label="despair">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="stand" label="stand">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="insufficient" label="insufficient">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="hatred" label="hatred">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="presence" label="presence">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="civil" label="civil">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="bound" label="bound">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="son" label="son">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="promise" label="promise">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="capped" label="capped">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="hew" label="hew">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="area" label="area">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="transform" label="transform">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="long" label="long">
+        <attvalues>
+          <attvalue for="0" value="6"/>
+        </attvalues>
+      </node>
+      <node id="racist" label="racist">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="low" label="low">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="valley" label="valley">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="happy" label="happy">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="tranquility" label="tranquility">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="somehow" label="somehow">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="heat" label="heat">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="gain" label="gain">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="true" label="true">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="made" label="made">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="evident" label="evident">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="signed" label="signed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="citizenship" label="citizenship">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="invigorating" label="invigorating">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="stripped" label="stripped">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="deed" label="deed">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="check" label="check">
+        <attvalues>
+          <attvalue for="0" value="5"/>
+        </attvalues>
+      </node>
+      <node id="physical" label="physical">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="reality" label="reality">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="republic" label="republic">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="roll" label="roll">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="gaining" label="gaining">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="evidenced" label="evidenced">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="oppression" label="oppression">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="wallow" label="wallow">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="meaning" label="meaning">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="brotherhood" label="brotherhood">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="persecution" label="persecution">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="died" label="died">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="rightful" label="rightful">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="ago" label="ago">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="land" label="land">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+        </attvalues>
+      </node>
+      <node id="together" label="together">
+        <attvalues>
+          <attvalue for="0" value="7"/>
+        </attvalues>
+      </node>
+      <node id="u" label="u">
+        <attvalues>
+          <attvalue for="0" value="4"/>
+        </attvalues>
+      </node>
+      <node id="came" label="came">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+        </attvalues>
+      </node>
+      <node id="time" label="time">
+        <attvalues>
+          <attvalue for="0" value="5"/>
+        </attvalues>
+      </node>
+      <node id="fresh" label="fresh">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+      <node id="unspeakable" label="unspeakable">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="344" source="owner" target="able">
+        <attvalues/>
+      </edge>
+      <edge id="0" source="happy" target="join">
+        <attvalues/>
+      </edge>
+      <edge id="346" source="sit" target="together">
+        <attvalues/>
+      </edge>
+      <edge id="347" source="together" target="table">
+        <attvalues/>
+      </edge>
+      <edge id="340" source="red" target="hill">
+        <attvalues/>
+      </edge>
+      <edge id="341" source="hill" target="son">
+        <attvalues/>
+      </edge>
+      <edge id="342" source="son" target="former">
+        <attvalues/>
+      </edge>
+      <edge id="343" source="slave" target="owner">
+        <attvalues/>
+      </edge>
+      <edge id="348" source="even" target="state">
+        <attvalues/>
+      </edge>
+      <edge id="349" source="sweltering" target="heat">
+        <attvalues/>
+      </edge>
+      <edge id="298" source="jail" target="cell">
+        <attvalues/>
+      </edge>
+      <edge id="299" source="come" target="area">
+        <attvalues/>
+      </edge>
+      <edge id="296" source="fresh" target="narrow">
+        <attvalues/>
+      </edge>
+      <edge id="297" source="narrow" target="jail">
+        <attvalues/>
+      </edge>
+      <edge id="294" source="trial" target="tribulation">
+        <attvalues/>
+      </edge>
+      <edge id="295" source="come" target="fresh">
+        <attvalues/>
+      </edge>
+      <edge id="292" source="stream" target="unmindful">
+        <attvalues/>
+      </edge>
+      <edge id="293" source="great" target="trial">
+        <attvalues/>
+      </edge>
+      <edge id="290" source="like" target="mighty">
+        <attvalues/>
+      </edge>
+      <edge id="291" source="mighty" target="stream">
+        <attvalues/>
+      </edge>
+      <edge id="199" source="must" target="guilty">
+        <attvalues/>
+      </edge>
+      <edge id="198" source="rightful" target="place">
+        <attvalues/>
+      </edge>
+      <edge id="195" source="justice" target="process">
+        <attvalues/>
+      </edge>
+      <edge id="194" source="lead" target="palace">
+        <attvalues/>
+      </edge>
+      <edge id="197" source="gaining" target="rightful">
+        <attvalues/>
+      </edge>
+      <edge id="196" source="process" target="gaining">
+        <attvalues/>
+      </edge>
+      <edge id="191" source="stand" target="warm">
+        <attvalues/>
+      </edge>
+      <edge id="190" source="must" target="say">
+        <attvalues/>
+      </edge>
+      <edge id="193" source="threshold" target="lead">
+        <attvalues/>
+      </edge>
+      <edge id="192" source="warm" target="threshold">
+        <attvalues/>
+      </edge>
+      <edge id="270" source="hotel" target="city">
+        <attvalues/>
+      </edge>
+      <edge id="271" source="long" target="negro">
+        <attvalues/>
+      </edge>
+      <edge id="272" source="negro" target="basic">
+        <attvalues/>
+      </edge>
+      <edge id="273" source="basic" target="mobility">
+        <attvalues/>
+      </edge>
+      <edge id="274" source="mobility" target="smaller">
+        <attvalues/>
+      </edge>
+      <edge id="275" source="smaller" target="ghetto">
+        <attvalues/>
+      </edge>
+      <edge id="276" source="ghetto" target="larger">
+        <attvalues/>
+      </edge>
+      <edge id="277" source="child" target="stripped">
+        <attvalues/>
+      </edge>
+      <edge id="278" source="stripped" target="self">
+        <attvalues/>
+      </edge>
+      <edge id="279" source="self" target="hood">
+        <attvalues/>
+      </edge>
+      <edge id="108" source="refuse" target="believe">
+        <attvalues/>
+      </edge>
+      <edge id="109" source="believe" target="bank">
+        <attvalues/>
+      </edge>
+      <edge id="102" source="people" target="bad">
+        <attvalues/>
+      </edge>
+      <edge id="103" source="come" target="back">
+        <attvalues/>
+      </edge>
+      <edge id="100" source="obligation" target="given">
+        <attvalues/>
+      </edge>
+      <edge id="101" source="given" target="people">
+        <attvalues/>
+      </edge>
+      <edge id="106" source="insufficient" target="fund">
+        <attvalues/>
+      </edge>
+      <edge id="107" source="fund" target="refuse">
+        <attvalues/>
+      </edge>
+      <edge id="104" source="back" target="marked">
+        <attvalues/>
+      </edge>
+      <edge id="105" source="marked" target="insufficient">
+        <attvalues/>
+      </edge>
+      <edge id="39" source="still" target="free">
+        <attvalues/>
+      </edge>
+      <edge id="38" source="later" target="still">
+        <attvalues/>
+      </edge>
+      <edge id="33" source="long" target="night">
+        <attvalues/>
+      </edge>
+      <edge id="32" source="end" target="long">
+        <attvalues/>
+      </edge>
+      <edge id="31" source="daybreak" target="end">
+        <attvalues/>
+      </edge>
+      <edge id="30" source="joyous" target="daybreak">
+        <attvalues/>
+      </edge>
+      <edge id="37" source="year" target="later">
+        <attvalues/>
+      </edge>
+      <edge id="36" source="one" target="hundred">
+        <attvalues/>
+      </edge>
+      <edge id="35" source="captivity" target="one">
+        <attvalues/>
+      </edge>
+      <edge id="34" source="night" target="captivity">
+        <attvalues/>
+      </edge>
+      <edge id="339" source="day" target="red">
+        <attvalues/>
+      </edge>
+      <edge id="338" source="created" target="equal">
+        <attvalues/>
+      </edge>
+      <edge id="335" source="hold" target="truth">
+        <attvalues/>
+      </edge>
+      <edge id="334" source="creed" target="hold">
+        <attvalues/>
+      </edge>
+      <edge id="337" source="men" target="created">
+        <attvalues/>
+      </edge>
+      <edge id="336" source="self" target="evident">
+        <attvalues/>
+      </edge>
+      <edge id="331" source="live" target="true">
+        <attvalues/>
+      </edge>
+      <edge id="330" source="rise" target="live">
+        <attvalues/>
+      </edge>
+      <edge id="333" source="meaning" target="creed">
+        <attvalues/>
+      </edge>
+      <edge id="332" source="true" target="meaning">
+        <attvalues/>
+      </edge>
+      <edge id="345" source="able" target="sit">
+        <attvalues/>
+      </edge>
+      <edge id="6" source="demonstration" target="freedom">
+        <attvalues/>
+      </edge>
+      <edge id="99" source="sacred" target="obligation">
+        <attvalues/>
+      </edge>
+      <edge id="98" source="honoring" target="sacred">
+        <attvalues/>
+      </edge>
+      <edge id="91" source="pursuit" target="obvious">
+        <attvalues/>
+      </edge>
+      <edge id="90" source="unalienable" target="pursuit">
+        <attvalues/>
+      </edge>
+      <edge id="93" source="note" target="insofar">
+        <attvalues/>
+      </edge>
+      <edge id="92" source="today" target="defaulted">
+        <attvalues/>
+      </edge>
+      <edge id="95" source="citizen" target="color">
+        <attvalues/>
+      </edge>
+      <edge id="94" source="insofar" target="citizen">
+        <attvalues/>
+      </edge>
+      <edge id="97" source="concerned" target="honoring">
+        <attvalues/>
+      </edge>
+      <edge id="96" source="color" target="concerned">
+        <attvalues/>
+      </edge>
+      <edge id="238" source="realize" target="destiny">
+        <attvalues/>
+      </edge>
+      <edge id="239" source="destiny" target="tied">
+        <attvalues/>
+      </edge>
+      <edge id="234" source="white" target="brother">
+        <attvalues/>
+      </edge>
+      <edge id="235" source="brother" target="evidenced">
+        <attvalues/>
+      </edge>
+      <edge id="236" source="evidenced" target="presence">
+        <attvalues/>
+      </edge>
+      <edge id="237" source="come" target="realize">
+        <attvalues/>
+      </edge>
+      <edge id="230" source="militancy" target="engulfed">
+        <attvalues/>
+      </edge>
+      <edge id="231" source="engulfed" target="community">
+        <attvalues/>
+      </edge>
+      <edge id="232" source="u" target="distrust">
+        <attvalues/>
+      </edge>
+      <edge id="233" source="people" target="many">
+        <attvalues/>
+      </edge>
+      <edge id="1" source="join" target="today">
+        <attvalues/>
+      </edge>
+      <edge id="146" source="injustice" target="solid">
+        <attvalues/>
+      </edge>
+      <edge id="147" source="solid" target="rock">
+        <attvalues/>
+      </edge>
+      <edge id="144" source="time" target="lift">
+        <attvalues/>
+      </edge>
+      <edge id="145" source="nation" target="quicksand">
+        <attvalues/>
+      </edge>
+      <edge id="142" source="sunlit" target="path">
+        <attvalues/>
+      </edge>
+      <edge id="143" source="path" target="racial">
+        <attvalues/>
+      </edge>
+      <edge id="140" source="desolate" target="valley">
+        <attvalues/>
+      </edge>
+      <edge id="141" source="segregation" target="sunlit">
+        <attvalues/>
+      </edge>
+      <edge id="148" source="rock" target="brotherhood">
+        <attvalues/>
+      </edge>
+      <edge id="149" source="justice" target="reality">
+        <attvalues/>
+      </edge>
+      <edge id="133" source="drug" target="gradualism">
+        <attvalues/>
+      </edge>
+      <edge id="132" source="tranquilizing" target="drug">
+        <attvalues/>
+      </edge>
+      <edge id="131" source="take" target="tranquilizing">
+        <attvalues/>
+      </edge>
+      <edge id="130" source="cooling" target="take">
+        <attvalues/>
+      </edge>
+      <edge id="137" source="time" target="rise">
+        <attvalues/>
+      </edge>
+      <edge id="136" source="promise" target="democracy">
+        <attvalues/>
+      </edge>
+      <edge id="135" source="make" target="real">
+        <attvalues/>
+      </edge>
+      <edge id="134" source="time" target="make">
+        <attvalues/>
+      </edge>
+      <edge id="139" source="dark" target="desolate">
+        <attvalues/>
+      </edge>
+      <edge id="138" source="rise" target="dark">
+        <attvalues/>
+      </edge>
+      <edge id="24" source="million" target="slave">
+        <attvalues/>
+      </edge>
+      <edge id="25" source="slave" target="seared">
+        <attvalues/>
+      </edge>
+      <edge id="26" source="seared" target="flame">
+        <attvalues/>
+      </edge>
+      <edge id="27" source="flame" target="withering">
+        <attvalues/>
+      </edge>
+      <edge id="20" source="great" target="beacon">
+        <attvalues/>
+      </edge>
+      <edge id="21" source="beacon" target="light">
+        <attvalues/>
+      </edge>
+      <edge id="22" source="light" target="hope">
+        <attvalues/>
+      </edge>
+      <edge id="23" source="hope" target="million">
+        <attvalues/>
+      </edge>
+      <edge id="28" source="withering" target="injustice">
+        <attvalues/>
+      </edge>
+      <edge id="29" source="came" target="joyous">
+        <attvalues/>
+      </edge>
+      <edge id="407" source="ring" target="curvaceous">
+        <attvalues/>
+      </edge>
+      <edge id="406" source="snow" target="capped">
+        <attvalues/>
+      </edge>
+      <edge id="405" source="ring" target="snow">
+        <attvalues/>
+      </edge>
+      <edge id="404" source="ring" target="heightening">
+        <attvalues/>
+      </edge>
+      <edge id="403" source="prodigious" target="hilltop">
+        <attvalues/>
+      </edge>
+      <edge id="402" source="ring" target="prodigious">
+        <attvalues/>
+      </edge>
+      <edge id="401" source="must" target="become">
+        <attvalues/>
+      </edge>
+      <edge id="400" source="freedom" target="ring">
+        <attvalues/>
+      </edge>
+      <edge id="409" source="hill" target="molehill">
+        <attvalues/>
+      </edge>
+      <edge id="408" source="curvaceous" target="slope">
+        <attvalues/>
+      </edge>
+      <edge id="379" source="revealed" target="flesh">
+        <attvalues/>
+      </edge>
+      <edge id="378" source="shall" target="revealed">
+        <attvalues/>
+      </edge>
+      <edge id="371" source="shall" target="made">
+        <attvalues/>
+      </edge>
+      <edge id="370" source="hill" target="mountain">
+        <attvalues/>
+      </edge>
+      <edge id="373" source="low" target="rough">
+        <attvalues/>
+      </edge>
+      <edge id="372" source="made" target="low">
+        <attvalues/>
+      </edge>
+      <edge id="375" source="plain" target="crooked">
+        <attvalues/>
+      </edge>
+      <edge id="374" source="made" target="plain">
+        <attvalues/>
+      </edge>
+      <edge id="377" source="straight" target="glory">
+        <attvalues/>
+      </edge>
+      <edge id="376" source="made" target="straight">
+        <attvalues/>
+      </edge>
+      <edge id="393" source="thee" target="sweet">
+        <attvalues/>
+      </edge>
+      <edge id="392" source="ti" target="thee">
+        <attvalues/>
+      </edge>
+      <edge id="88" source="would" target="guaranteed">
+        <attvalues/>
+      </edge>
+      <edge id="89" source="guaranteed" target="unalienable">
+        <attvalues/>
+      </edge>
+      <edge id="397" source="land" target="pride">
+        <attvalues/>
+      </edge>
+      <edge id="396" source="father" target="died">
+        <attvalues/>
+      </edge>
+      <edge id="395" source="sing" target="father">
+        <attvalues/>
+      </edge>
+      <edge id="394" source="land" target="liberty">
+        <attvalues/>
+      </edge>
+      <edge id="82" source="promise" target="men">
+        <attvalues/>
+      </edge>
+      <edge id="83" source="men" target="yes">
+        <attvalues/>
+      </edge>
+      <edge id="80" source="fall" target="heir">
+        <attvalues/>
+      </edge>
+      <edge id="81" source="note" target="promise">
+        <attvalues/>
+      </edge>
+      <edge id="86" source="well" target="white">
+        <attvalues/>
+      </edge>
+      <edge id="87" source="men" target="would">
+        <attvalues/>
+      </edge>
+      <edge id="84" source="yes" target="black">
+        <attvalues/>
+      </edge>
+      <edge id="85" source="men" target="well">
+        <attvalues/>
+      </edge>
+      <edge id="7" source="history" target="nation">
+        <attvalues/>
+      </edge>
+      <edge id="245" source="make" target="pledge">
+        <attvalues/>
+      </edge>
+      <edge id="244" source="walk" target="alone">
+        <attvalues/>
+      </edge>
+      <edge id="247" source="shall" target="always">
+        <attvalues/>
+      </edge>
+      <edge id="246" source="pledge" target="shall">
+        <attvalues/>
+      </edge>
+      <edge id="241" source="inextricably" target="bound">
+        <attvalues/>
+      </edge>
+      <edge id="240" source="freedom" target="inextricably">
+        <attvalues/>
+      </edge>
+      <edge id="243" source="cannot" target="walk">
+        <attvalues/>
+      </edge>
+      <edge id="242" source="freedom" target="cannot">
+        <attvalues/>
+      </edge>
+      <edge id="249" source="march" target="ahead">
+        <attvalues/>
+      </edge>
+      <edge id="248" source="always" target="march">
+        <attvalues/>
+      </edge>
+      <edge id="179" source="citizenship" target="right">
+        <attvalues/>
+      </edge>
+      <edge id="178" source="granted" target="citizenship">
+        <attvalues/>
+      </edge>
+      <edge id="177" source="tranquility" target="granted">
+        <attvalues/>
+      </edge>
+      <edge id="176" source="rest" target="tranquility">
+        <attvalues/>
+      </edge>
+      <edge id="175" source="neither" target="rest">
+        <attvalues/>
+      </edge>
+      <edge id="174" source="usual" target="neither">
+        <attvalues/>
+      </edge>
+      <edge id="173" source="business" target="usual">
+        <attvalues/>
+      </edge>
+      <edge id="172" source="return" target="business">
+        <attvalues/>
+      </edge>
+      <edge id="171" source="nation" target="return">
+        <attvalues/>
+      </edge>
+      <edge id="170" source="rude" target="awakening">
+        <attvalues/>
+      </edge>
+      <edge id="253" source="devotee" target="civil">
+        <attvalues/>
+      </edge>
+      <edge id="182" source="revolt" target="continue">
+        <attvalues/>
+      </edge>
+      <edge id="183" source="continue" target="shake">
+        <attvalues/>
+      </edge>
+      <edge id="180" source="right" target="whirlwind">
+        <attvalues/>
+      </edge>
+      <edge id="181" source="whirlwind" target="revolt">
+        <attvalues/>
+      </edge>
+      <edge id="186" source="bright" target="day">
+        <attvalues/>
+      </edge>
+      <edge id="187" source="justice" target="emerges">
+        <attvalues/>
+      </edge>
+      <edge id="184" source="shake" target="foundation">
+        <attvalues/>
+      </edge>
+      <edge id="185" source="nation" target="bright">
+        <attvalues/>
+      </edge>
+      <edge id="188" source="emerges" target="something">
+        <attvalues/>
+      </edge>
+      <edge id="189" source="something" target="must">
+        <attvalues/>
+      </edge>
+      <edge id="11" source="ago" target="great">
+        <attvalues/>
+      </edge>
+      <edge id="10" source="year" target="ago">
+        <attvalues/>
+      </edge>
+      <edge id="13" source="whose" target="symbolic">
+        <attvalues/>
+      </edge>
+      <edge id="12" source="great" target="whose">
+        <attvalues/>
+      </edge>
+      <edge id="15" source="shadow" target="stand">
+        <attvalues/>
+      </edge>
+      <edge id="14" source="symbolic" target="shadow">
+        <attvalues/>
+      </edge>
+      <edge id="17" source="signed" target="momentous">
+        <attvalues/>
+      </edge>
+      <edge id="16" source="today" target="signed">
+        <attvalues/>
+      </edge>
+      <edge id="19" source="decree" target="came">
+        <attvalues/>
+      </edge>
+      <edge id="18" source="momentous" target="decree">
+        <attvalues/>
+      </edge>
+      <edge id="62" source="ve" target="come">
+        <attvalues/>
+      </edge>
+      <edge id="322" source="friend" target="even">
+        <attvalues/>
+      </edge>
+      <edge id="323" source="even" target="though">
+        <attvalues/>
+      </edge>
+      <edge id="320" source="valley" target="despair">
+        <attvalues/>
+      </edge>
+      <edge id="321" source="today" target="friend">
+        <attvalues/>
+      </edge>
+      <edge id="326" source="today" target="tomorrow">
+        <attvalues/>
+      </edge>
+      <edge id="327" source="still" target="dream">
+        <attvalues/>
+      </edge>
+      <edge id="324" source="though" target="face">
+        <attvalues/>
+      </edge>
+      <edge id="325" source="face" target="difficulty">
+        <attvalues/>
+      </edge>
+      <edge id="328" source="dream" target="deeply">
+        <attvalues/>
+      </edge>
+      <edge id="329" source="deeply" target="rooted">
+        <attvalues/>
+      </edge>
+      <edge id="201" source="wrongful" target="deed">
+        <attvalues/>
+      </edge>
+      <edge id="200" source="guilty" target="wrongful">
+        <attvalues/>
+      </edge>
+      <edge id="203" source="seek" target="satisfy">
+        <attvalues/>
+      </edge>
+      <edge id="202" source="u" target="seek">
+        <attvalues/>
+      </edge>
+      <edge id="205" source="freedom" target="drinking">
+        <attvalues/>
+      </edge>
+      <edge id="204" source="satisfy" target="thirst">
+        <attvalues/>
+      </edge>
+      <edge id="207" source="cup" target="bitterness">
+        <attvalues/>
+      </edge>
+      <edge id="206" source="drinking" target="cup">
+        <attvalues/>
+      </edge>
+      <edge id="209" source="must" target="forever">
+        <attvalues/>
+      </edge>
+      <edge id="208" source="bitterness" target="hatred">
+        <attvalues/>
+      </edge>
+      <edge id="77" source="promissory" target="note">
+        <attvalues/>
+      </edge>
+      <edge id="76" source="signing" target="promissory">
+        <attvalues/>
+      </edge>
+      <edge id="75" source="word" target="signing">
+        <attvalues/>
+      </edge>
+      <edge id="74" source="magnificent" target="word">
+        <attvalues/>
+      </edge>
+      <edge id="73" source="wrote" target="magnificent">
+        <attvalues/>
+      </edge>
+      <edge id="72" source="republic" target="wrote">
+        <attvalues/>
+      </edge>
+      <edge id="71" source="architect" target="republic">
+        <attvalues/>
+      </edge>
+      <edge id="70" source="check" target="architect">
+        <attvalues/>
+      </edge>
+      <edge id="79" source="every" target="fall">
+        <attvalues/>
+      </edge>
+      <edge id="78" source="note" target="every">
+        <attvalues/>
+      </edge>
+      <edge id="2" source="today" target="go">
+        <attvalues/>
+      </edge>
+      <edge id="8" source="nation" target="score">
+        <attvalues/>
+      </edge>
+      <edge id="68" source="capital" target="cash">
+        <attvalues/>
+      </edge>
+      <edge id="120" source="justice" target="also">
+        <attvalues/>
+      </edge>
+      <edge id="121" source="come" target="hallowed">
+        <attvalues/>
+      </edge>
+      <edge id="122" source="hallowed" target="spot">
+        <attvalues/>
+      </edge>
+      <edge id="123" source="spot" target="remind">
+        <attvalues/>
+      </edge>
+      <edge id="124" source="remind" target="fierce">
+        <attvalues/>
+      </edge>
+      <edge id="125" source="fierce" target="urgency">
+        <attvalues/>
+      </edge>
+      <edge id="126" source="urgency" target="time">
+        <attvalues/>
+      </edge>
+      <edge id="127" source="time" target="engage">
+        <attvalues/>
+      </edge>
+      <edge id="128" source="engage" target="luxury">
+        <attvalues/>
+      </edge>
+      <edge id="129" source="luxury" target="cooling">
+        <attvalues/>
+      </edge>
+      <edge id="414" source="word" target="old">
+        <attvalues/>
+      </edge>
+      <edge id="415" source="old" target="spiritual">
+        <attvalues/>
+      </edge>
+      <edge id="416" source="spiritual" target="last">
+        <attvalues/>
+      </edge>
+      <edge id="410" source="ring" target="happens">
+        <attvalues/>
+      </edge>
+      <edge id="411" source="every" target="village">
+        <attvalues/>
+      </edge>
+      <edge id="412" source="every" target="hamlet">
+        <attvalues/>
+      </edge>
+      <edge id="413" source="able" target="speed">
+        <attvalues/>
+      </edge>
+      <edge id="319" source="u" target="wallow">
+        <attvalues/>
+      </edge>
+      <edge id="318" source="situation" target="changed">
+        <attvalues/>
+      </edge>
+      <edge id="313" source="back" target="slum">
+        <attvalues/>
+      </edge>
+      <edge id="312" source="suffering" target="redemptive">
+        <attvalues/>
+      </edge>
+      <edge id="311" source="faith" target="unearned">
+        <attvalues/>
+      </edge>
+      <edge id="310" source="work" target="faith">
+        <attvalues/>
+      </edge>
+      <edge id="317" source="somehow" target="situation">
+        <attvalues/>
+      </edge>
+      <edge id="316" source="knowing" target="somehow">
+        <attvalues/>
+      </edge>
+      <edge id="315" source="city" target="knowing">
+        <attvalues/>
+      </edge>
+      <edge id="314" source="ghetto" target="northern">
+        <attvalues/>
+      </edge>
+      <edge id="3" source="go" target="history">
+        <attvalues/>
+      </edge>
+      <edge id="368" source="girl" target="sister">
+        <attvalues/>
+      </edge>
+      <edge id="369" source="shall" target="exalted">
+        <attvalues/>
+      </edge>
+      <edge id="366" source="black" target="girl">
+        <attvalues/>
+      </edge>
+      <edge id="367" source="join" target="hand">
+        <attvalues/>
+      </edge>
+      <edge id="364" source="interposition" target="nullification">
+        <attvalues/>
+      </edge>
+      <edge id="365" source="black" target="boy">
+        <attvalues/>
+      </edge>
+      <edge id="362" source="lip" target="dripping">
+        <attvalues/>
+      </edge>
+      <edge id="363" source="word" target="interposition">
+        <attvalues/>
+      </edge>
+      <edge id="360" source="racist" target="governor">
+        <attvalues/>
+      </edge>
+      <edge id="361" source="governor" target="lip">
+        <attvalues/>
+      </edge>
+      <edge id="380" source="shall" target="see">
+        <attvalues/>
+      </edge>
+      <edge id="381" source="able" target="hew">
+        <attvalues/>
+      </edge>
+      <edge id="382" source="despair" target="stone">
+        <attvalues/>
+      </edge>
+      <edge id="383" source="able" target="transform">
+        <attvalues/>
+      </edge>
+      <edge id="384" source="transform" target="jangling">
+        <attvalues/>
+      </edge>
+      <edge id="385" source="jangling" target="discord">
+        <attvalues/>
+      </edge>
+      <edge id="386" source="nation" target="beautiful">
+        <attvalues/>
+      </edge>
+      <edge id="387" source="beautiful" target="symphony">
+        <attvalues/>
+      </edge>
+      <edge id="388" source="together" target="pray">
+        <attvalues/>
+      </edge>
+      <edge id="389" source="able" target="sing">
+        <attvalues/>
+      </edge>
+      <edge id="60" source="exile" target="land">
+        <attvalues/>
+      </edge>
+      <edge id="61" source="land" target="ve">
+        <attvalues/>
+      </edge>
+      <edge id="258" source="unspeakable" target="horror">
+        <attvalues/>
+      </edge>
+      <edge id="259" source="horror" target="police">
+        <attvalues/>
+      </edge>
+      <edge id="64" source="dramatize" target="shameful">
+        <attvalues/>
+      </edge>
+      <edge id="65" source="shameful" target="condition">
+        <attvalues/>
+      </edge>
+      <edge id="66" source="condition" target="sense">
+        <attvalues/>
+      </edge>
+      <edge id="67" source="nation" target="capital">
+        <attvalues/>
+      </edge>
+      <edge id="252" source="asking" target="devotee">
+        <attvalues/>
+      </edge>
+      <edge id="69" source="cash" target="check">
+        <attvalues/>
+      </edge>
+      <edge id="250" source="cannot" target="turn">
+        <attvalues/>
+      </edge>
+      <edge id="251" source="back" target="asking">
+        <attvalues/>
+      </edge>
+      <edge id="256" source="long" target="victim">
+        <attvalues/>
+      </edge>
+      <edge id="257" source="victim" target="unspeakable">
+        <attvalues/>
+      </edge>
+      <edge id="254" source="right" target="satisfied">
+        <attvalues/>
+      </edge>
+      <edge id="255" source="satisfied" target="never">
+        <attvalues/>
+      </edge>
+      <edge id="168" source="steam" target="content">
+        <attvalues/>
+      </edge>
+      <edge id="169" source="content" target="rude">
+        <attvalues/>
+      </edge>
+      <edge id="164" source="end" target="beginning">
+        <attvalues/>
+      </edge>
+      <edge id="165" source="hope" target="needed">
+        <attvalues/>
+      </edge>
+      <edge id="166" source="needed" target="blow">
+        <attvalues/>
+      </edge>
+      <edge id="167" source="blow" target="steam">
+        <attvalues/>
+      </edge>
+      <edge id="160" source="invigorating" target="autumn">
+        <attvalues/>
+      </edge>
+      <edge id="161" source="freedom" target="equality">
+        <attvalues/>
+      </edge>
+      <edge id="162" source="equality" target="sixty">
+        <attvalues/>
+      </edge>
+      <edge id="163" source="sixty" target="three">
+        <attvalues/>
+      </edge>
+      <edge id="9" source="score" target="year">
+        <attvalues/>
+      </edge>
+      <edge id="357" source="content" target="character">
+        <attvalues/>
+      </edge>
+      <edge id="356" source="color" target="skin">
+        <attvalues/>
+      </edge>
+      <edge id="355" source="nation" target="judged">
+        <attvalues/>
+      </edge>
+      <edge id="354" source="four" target="little">
+        <attvalues/>
+      </edge>
+      <edge id="353" source="dream" target="four">
+        <attvalues/>
+      </edge>
+      <edge id="352" source="transformed" target="oasis">
+        <attvalues/>
+      </edge>
+      <edge id="351" source="oppression" target="transformed">
+        <attvalues/>
+      </edge>
+      <edge id="350" source="heat" target="oppression">
+        <attvalues/>
+      </edge>
+      <edge id="359" source="vicious" target="racist">
+        <attvalues/>
+      </edge>
+      <edge id="358" source="day" target="vicious">
+        <attvalues/>
+      </edge>
+      <edge id="216" source="must" target="allow">
+        <attvalues/>
+      </edge>
+      <edge id="217" source="allow" target="creative">
+        <attvalues/>
+      </edge>
+      <edge id="214" source="plane" target="dignity">
+        <attvalues/>
+      </edge>
+      <edge id="215" source="dignity" target="discipline">
+        <attvalues/>
+      </edge>
+      <edge id="212" source="struggle" target="high">
+        <attvalues/>
+      </edge>
+      <edge id="213" source="high" target="plane">
+        <attvalues/>
+      </edge>
+      <edge id="210" source="forever" target="conduct">
+        <attvalues/>
+      </edge>
+      <edge id="211" source="conduct" target="struggle">
+        <attvalues/>
+      </edge>
+      <edge id="218" source="creative" target="protest">
+        <attvalues/>
+      </edge>
+      <edge id="219" source="protest" target="degenerate">
+        <attvalues/>
+      </edge>
+      <edge id="289" source="water" target="righteousness">
+        <attvalues/>
+      </edge>
+      <edge id="288" source="like" target="water">
+        <attvalues/>
+      </edge>
+      <edge id="4" source="history" target="greatest">
+        <attvalues/>
+      </edge>
+      <edge id="281" source="dignity" target="sign">
+        <attvalues/>
+      </edge>
+      <edge id="280" source="hood" target="robbed">
+        <attvalues/>
+      </edge>
+      <edge id="283" source="cannot" target="vote">
+        <attvalues/>
+      </edge>
+      <edge id="282" source="sign" target="stating">
+        <attvalues/>
+      </edge>
+      <edge id="285" source="belief" target="nothing">
+        <attvalues/>
+      </edge>
+      <edge id="284" source="vote" target="belief">
+        <attvalues/>
+      </edge>
+      <edge id="287" source="roll" target="like">
+        <attvalues/>
+      </edge>
+      <edge id="286" source="justice" target="roll">
+        <attvalues/>
+      </edge>
+      <edge id="263" source="heavy" target="fatigue">
+        <attvalues/>
+      </edge>
+      <edge id="262" source="body" target="heavy">
+        <attvalues/>
+      </edge>
+      <edge id="261" source="long" target="body">
+        <attvalues/>
+      </edge>
+      <edge id="260" source="police" target="brutality">
+        <attvalues/>
+      </edge>
+      <edge id="267" source="lodging" target="motel">
+        <attvalues/>
+      </edge>
+      <edge id="266" source="gain" target="lodging">
+        <attvalues/>
+      </edge>
+      <edge id="265" source="cannot" target="gain">
+        <attvalues/>
+      </edge>
+      <edge id="264" source="fatigue" target="travel">
+        <attvalues/>
+      </edge>
+      <edge id="269" source="highway" target="hotel">
+        <attvalues/>
+      </edge>
+      <edge id="268" source="motel" target="highway">
+        <attvalues/>
+      </edge>
+      <edge id="59" source="find" target="exile">
+        <attvalues/>
+      </edge>
+      <edge id="58" source="society" target="find">
+        <attvalues/>
+      </edge>
+      <edge id="55" source="still" target="languished">
+        <attvalues/>
+      </edge>
+      <edge id="54" source="material" target="prosperity">
+        <attvalues/>
+      </edge>
+      <edge id="57" source="corner" target="society">
+        <attvalues/>
+      </edge>
+      <edge id="56" source="languished" target="corner">
+        <attvalues/>
+      </edge>
+      <edge id="51" source="midst" target="vast">
+        <attvalues/>
+      </edge>
+      <edge id="50" source="poverty" target="midst">
+        <attvalues/>
+      </edge>
+      <edge id="53" source="ocean" target="material">
+        <attvalues/>
+      </edge>
+      <edge id="52" source="vast" target="ocean">
+        <attvalues/>
+      </edge>
+      <edge id="63" source="today" target="dramatize">
+        <attvalues/>
+      </edge>
+      <edge id="115" source="give" target="u">
+        <attvalues/>
+      </edge>
+      <edge id="114" source="check" target="give">
+        <attvalues/>
+      </edge>
+      <edge id="117" source="upon" target="demand">
+        <attvalues/>
+      </edge>
+      <edge id="116" source="u" target="upon">
+        <attvalues/>
+      </edge>
+      <edge id="111" source="justice" target="bankrupt">
+        <attvalues/>
+      </edge>
+      <edge id="110" source="bank" target="justice">
+        <attvalues/>
+      </edge>
+      <edge id="113" source="vault" target="opportunity">
+        <attvalues/>
+      </edge>
+      <edge id="112" source="great" target="vault">
+        <attvalues/>
+      </edge>
+      <edge id="119" source="freedom" target="security">
+        <attvalues/>
+      </edge>
+      <edge id="118" source="demand" target="rich">
+        <attvalues/>
+      </edge>
+      <edge id="308" source="creative" target="suffering">
+        <attvalues/>
+      </edge>
+      <edge id="309" source="suffering" target="work">
+        <attvalues/>
+      </edge>
+      <edge id="300" source="area" target="quest">
+        <attvalues/>
+      </edge>
+      <edge id="301" source="freedom" target="left">
+        <attvalues/>
+      </edge>
+      <edge id="302" source="left" target="battered">
+        <attvalues/>
+      </edge>
+      <edge id="303" source="battered" target="storm">
+        <attvalues/>
+      </edge>
+      <edge id="304" source="storm" target="persecution">
+        <attvalues/>
+      </edge>
+      <edge id="305" source="persecution" target="staggered">
+        <attvalues/>
+      </edge>
+      <edge id="306" source="staggered" target="wind">
+        <attvalues/>
+      </edge>
+      <edge id="307" source="brutality" target="veteran">
+        <attvalues/>
+      </edge>
+      <edge id="229" source="new" target="militancy">
+        <attvalues/>
+      </edge>
+      <edge id="228" source="marvelous" target="new">
+        <attvalues/>
+      </edge>
+      <edge id="227" source="force" target="marvelous">
+        <attvalues/>
+      </edge>
+      <edge id="226" source="force" target="soul">
+        <attvalues/>
+      </edge>
+      <edge id="225" source="physical" target="force">
+        <attvalues/>
+      </edge>
+      <edge id="224" source="height" target="meeting">
+        <attvalues/>
+      </edge>
+      <edge id="223" source="majestic" target="height">
+        <attvalues/>
+      </edge>
+      <edge id="222" source="rise" target="majestic">
+        <attvalues/>
+      </edge>
+      <edge id="221" source="physical" target="violence">
+        <attvalues/>
+      </edge>
+      <edge id="220" source="degenerate" target="physical">
+        <attvalues/>
+      </edge>
+      <edge id="391" source="country" target="ti">
+        <attvalues/>
+      </edge>
+      <edge id="390" source="meaning" target="country">
+        <attvalues/>
+      </edge>
+      <edge id="151" source="would" target="fatal">
+        <attvalues/>
+      </edge>
+      <edge id="150" source="reality" target="child">
+        <attvalues/>
+      </edge>
+      <edge id="153" source="urgency" target="moment">
+        <attvalues/>
+      </edge>
+      <edge id="152" source="nation" target="overlook">
+        <attvalues/>
+      </edge>
+      <edge id="155" source="sweltering" target="summer">
+        <attvalues/>
+      </edge>
+      <edge id="154" source="moment" target="sweltering">
+        <attvalues/>
+      </edge>
+      <edge id="157" source="legitimate" target="discontent">
+        <attvalues/>
+      </edge>
+      <edge id="156" source="summer" target="legitimate">
+        <attvalues/>
+      </edge>
+      <edge id="159" source="pas" target="invigorating">
+        <attvalues/>
+      </edge>
+      <edge id="158" source="discontent" target="pas">
+        <attvalues/>
+      </edge>
+      <edge id="399" source="mountainside" target="let">
+        <attvalues/>
+      </edge>
+      <edge id="398" source="every" target="mountainside">
+        <attvalues/>
+      </edge>
+      <edge id="48" source="lonely" target="island">
+        <attvalues/>
+      </edge>
+      <edge id="49" source="island" target="poverty">
+        <attvalues/>
+      </edge>
+      <edge id="46" source="chain" target="discrimination">
+        <attvalues/>
+      </edge>
+      <edge id="47" source="life" target="lonely">
+        <attvalues/>
+      </edge>
+      <edge id="44" source="manacle" target="segregation">
+        <attvalues/>
+      </edge>
+      <edge id="45" source="segregation" target="chain">
+        <attvalues/>
+      </edge>
+      <edge id="42" source="sadly" target="crippled">
+        <attvalues/>
+      </edge>
+      <edge id="43" source="crippled" target="manacle">
+        <attvalues/>
+      </edge>
+      <edge id="40" source="later" target="life">
+        <attvalues/>
+      </edge>
+      <edge id="41" source="still" target="sadly">
+        <attvalues/>
+      </edge>
+      <edge id="5" source="greatest" target="demonstration">
+        <attvalues/>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
