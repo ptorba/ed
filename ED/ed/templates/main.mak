@@ -15,6 +15,7 @@
 		<li><a href="/count">count</a></li>
 		<li><a href="/betweenness">betweenness</a></li>
 		<li><a href="/random">random</a></li>
+		<li><a href="/page_rank">page rank</a></li>
 		</ul>
 		<div id='sigma'>
 			

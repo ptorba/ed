@@ -62,7 +62,22 @@ class RandomController(GraphController):
             
         generate_gexf2(self.graph,'random')
         return {'project':'ED'}
+
+
+@view_config(route_name='page_rank', renderer='main.mak')
+class PageRankController(GraphController):
+    def __init__(self,request):
+        GraphController.__init__(self,request)
+        #self.request = request
         
+    def __call__(self):
+        page_rank = nx.pagerank(self.graph)
+        for n in self.graph.nodes():
+            self.graph.node[n]['page_rank']=page_rank[n]
+            
+        generate_gexf2(self.graph,'page_rank')
+        return {'project':'ED'}
+
 
 @view_config(route_name='main', renderer='main.mak')
 def main(request):

@@ -13,5 +13,6 @@ def main(global_config, **settings):
     config.add_route('count', '/count')
     config.add_route('betweenness', '/betweenness')
     config.add_route('random', '/random')
+    config.add_route('page_rank', '/page_rank')
     config.scan()
     return config.make_wsgi_app()
