@@ -16,7 +16,15 @@
 		<li><a href="/betweenness">betweenness</a></li>
 		<li><a href="/random">random</a></li>
 		<li><a href="/page_rank">page rank</a></li>
+		<li><a href="/degree">degree</a></li>
 		</ul>
+		<form id='text-change' method='POST' action='/change_text'>
+			<textarea name="text" rows='20' cols='60'>${request.context.text if hasattr(request.context,'text') else ''}</textarea>
+			<input type='submit' value='Send'/>
+		</form>
+		<form id='text-reset' method='POST' action='/reset_text'>
+			<input type='submit' value='Reset text'/>
+		</form>
 		<div id='sigma'>
 			
 		</div>

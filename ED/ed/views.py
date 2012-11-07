@@ -1,15 +1,27 @@
 from pyramid.view import view_config
 from lib import *
 import logging
+from pyramid.httpexceptions import HTTPFound, HTTPNotFound
+from pyramid.url import route_url
+import pkg_resources
+import os
 log = logging.getLogger(__name__)
 
 
 
 class GraphController(object):
     def __init__(self,request):
-        text = urllib2.urlopen(request.static_url('ed:static/texts/test.txt')).read().decode('UTF-8')
+        try:
+            text = urllib2.urlopen(request.static_url('ed:static/texts/user_input.txt')).read().decode('UTF-8')
+        except Exception,e:
+            log.debug('exception: %s',e)
+            text = urllib2.urlopen(request.static_url('ed:static/texts/test.txt')).read().decode('UTF-8')
+        
         self.words = get_words(text)
+        log.debug('words: %s',self.words)
         self.graph = generate_graph(self.words) 
+        self.request = request
+        self.request.context.text = text
 
         
         
@@ -37,9 +49,7 @@ class CountController(GraphController):
 class BetweenController(GraphController):
     def __init__(self,request):
         GraphController.__init__(self,request)
-        #self.request = request
-    
-
+        
     def __call__(self):
         betweenness = nx.betweenness_centrality(self.graph)
         
@@ -54,7 +64,6 @@ class BetweenController(GraphController):
 class RandomController(GraphController):
     def __init__(self,request):
         GraphController.__init__(self,request)
-        #self.request = request
         
     def __call__(self):
         for n in self.graph.nodes():
@@ -68,7 +77,6 @@ class RandomController(GraphController):
 class PageRankController(GraphController):
     def __init__(self,request):
         GraphController.__init__(self,request)
-        #self.request = request
         
     def __call__(self):
         page_rank = nx.pagerank(self.graph)
@@ -77,7 +85,37 @@ class PageRankController(GraphController):
             
         generate_gexf2(self.graph,'page_rank')
         return {'project':'ED'}
+    
+@view_config(route_name='degree', renderer='main.mak')
+class DegreeController(GraphController):
+    def __init__(self,request):
+        GraphController.__init__(self,request)
+        
+    def __call__(self):
+        deg = self.graph.degree()
+        for n in self.graph.nodes():
+            self.graph.node[n]['degree']=deg[n]
+            
+        generate_gexf2(self.graph,'degree')
+        return {'project':'ED'}
 
+
+@view_config(route_name='change_text')
+def change_text(request):
+    log.debug('change_text')
+    text = request.params.get('text')
+    f = open(pkg_resources.resource_filename('ed','static/texts/user_input.txt'),'w')
+    f.write(text)
+    request.context.text = text
+    f.close()
+    log.debug('change_text end')
+    return HTTPFound(route_url('count',request))
+
+@view_config(route_name='reset_text')
+def reset_text(request):
+    log.debug('reset text')
+    os.remove(pkg_resources.resource_filename('ed','static/texts/user_input.txt'))
+    return HTTPFound(route_url('count',request))
 
 @view_config(route_name='main', renderer='main.mak')
 def main(request):
