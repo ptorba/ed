@@ -11,7 +11,7 @@ import networkx as nx
 import random
 
     
-def generate_graph(g,filename='test.gexf'):  
+def generate_gexf(g,filename='test.gexf'):  
     ge = gexf.Gexf("ED","ED test")
     graph=ge.addGraph("undirected","static","a test graph")
     count = graph.addNodeAttribute("count","0")
@@ -31,8 +31,9 @@ def generate_graph(g,filename='test.gexf'):
     f.write(etree.tostring(ge.getXML(), pretty_print=True))
     f.close()
     
-if __name__=="__main__":
-    text = open('text.txt','r').read().decode('UTF-8')
+    
+def get_words(filename):
+    text = open(filename,'r').read().decode('UTF-8')
     
     words = RegexpTokenizer(r'\b[a-z]+\b').tokenize(text)
     
@@ -40,16 +41,15 @@ if __name__=="__main__":
     
     words = [x for x in words if x not in stoplist]
     
-
-    
-    
     wnl = WordNetLemmatizer()
     
     words_stemmed = [wnl.lemmatize(x) for x in words]
     
-    counts = {}
-    for w in words_stemmed:
-        counts[w] = counts.get(w,0)+1
+    return words_stemmed
+    
+    
+def generate_graph(words_stemmed):
+
     #print words_stemmed
     ns = ngrams(words_stemmed,2)
     #print ns
@@ -59,6 +59,14 @@ if __name__=="__main__":
     g.add_nodes_from(words_stemmed)
     g.add_edges_from(ns)
     
+    return g
+    
+if __name__=="__main__":
+    words_stemmed = get_words('test.txt')
+    counts = {}
+
+    for w in words_stemmed:
+        counts[w] = counts.get(w,0)+1
     print len(words_stemmed), len(g.nodes())
     print len(ns), len(g.edges())
     
@@ -69,4 +77,4 @@ if __name__=="__main__":
     for k,v in centrality.iteritems():
         g.node[k]['betweenness']=v
 
-    generate_graph(g)
+    generate_gexf(g)

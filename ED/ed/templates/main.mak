@@ -9,7 +9,13 @@
 	</head>
 		
 	<body>
-		<p>Hello</p>
+		<p>Hello ${project}</p>
+		<p>Size based on:</p>
+		<ul>
+		<li><a href="/count">count</a></li>
+		<li><a href="/betweenness/">betweenness</a></li>
+		<li><a href="/random/">random</a></li>
+		</ul>
 		<div id='sigma'>
 			
 		</div>
@@ -26,8 +32,8 @@
 			labelThreshold: 6,
 			defaultEdgeType: 'curve',
 			}).graphProperties({
-			minNodeSize: 0.5,
-			maxNodeSize: 5,
+			minNodeSize: 1,
+			maxNodeSize: 20,
 			minEdgeSize: 0.1,
 			maxEdgeSize: 4
 			}).mouseProperties({
