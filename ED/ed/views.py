@@ -5,6 +5,7 @@ from pyramid.httpexceptions import HTTPFound, HTTPNotFound
 from pyramid.url import route_url
 import pkg_resources
 import os
+from lib.community import best_partition
 log = logging.getLogger(__name__)
 
 
@@ -20,6 +21,10 @@ class GraphController(object):
         self.words = get_words(text)
         log.debug('words: %s',self.words)
         self.graph = generate_graph(self.words) 
+        self.partitioned_graph = best_partition(self.graph)
+        log.debug('self.partitioned_graph: %s',self.partitioned_graph)
+        for n in self.graph.nodes():
+            self.graph.node[n]['partition']=self.partitioned_graph[n]
         self.request = request
         self.request.context.text = text
 
