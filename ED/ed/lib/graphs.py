@@ -10,6 +10,7 @@ import networkx as nx
 import random
 import urllib2
 import colorsys
+import itertools
     
 import pkg_resources
 import logging
@@ -46,11 +47,16 @@ def get_words(text):
 
     
 def generate_graph(words_stemmed):
-    ns = ngrams(words_stemmed,2)
+    edges = set([])
+    for i in range(2,6):
+        ns = ngrams(words_stemmed,i)
+        for ngram in ns:
+            s = set([i for i in itertools.combinations(ngram,2)])
+            edges = edges.union(s)
     
     g = nx.Graph()
     
     g.add_nodes_from(words_stemmed)
-    g.add_edges_from(ns)
+    g.add_edges_from(edges)
     
     return g
