@@ -47,7 +47,7 @@ class CountController(GraphController):
         
         
         generate_gexf2(self.graph,'count')
-        return {'project':'ED'}
+        return {'project':'ED','prop_name':'count','min':min(counts.values()),'max':max(counts.values()),'threshold':int(self.request.GET.get('threshold',-1) or -1)}
     
     
 @view_config(route_name='betweenness', renderer='main.mak')
@@ -62,7 +62,7 @@ class BetweenController(GraphController):
             self.graph.node[n]['betweenness']=betweenness[n]
             
         generate_gexf2(self.graph,'betweenness')
-        return {'project':'ED'}
+        return {'project':'ED','prop_name':'betweenness','min':min(betweenness.values()),'max':max(betweenness.values()),'threshold':float(self.request.GET.get('threshold',-1) or -1)}
     
     
 @view_config(route_name='random', renderer='main.mak')
@@ -75,7 +75,7 @@ class RandomController(GraphController):
             self.graph.node[n]['random']=random.randint(1,10)
             
         generate_gexf2(self.graph,'random')
-        return {'project':'ED'}
+        return {'project':'ED','prop_name':'','min':'','max':'','threshold':-1}
 
 
 @view_config(route_name='page_rank', renderer='main.mak')
@@ -89,7 +89,7 @@ class PageRankController(GraphController):
             self.graph.node[n]['page_rank']=page_rank[n]
             
         generate_gexf2(self.graph,'page_rank')
-        return {'project':'ED'}
+        return {'project':'ED','prop_name':'page_rank','min':min(page_rank.values()),'max':max(page_rank.values()),'threshold':float(self.request.GET.get('threshold',-1) or -1)}
     
 @view_config(route_name='degree', renderer='main.mak')
 class DegreeController(GraphController):
@@ -102,7 +102,7 @@ class DegreeController(GraphController):
             self.graph.node[n]['degree']=deg[n]
             
         generate_gexf2(self.graph,'degree')
-        return {'project':'ED'}
+        return {'project':'ED','prop_name':'degree','min':min(deg.values()),'max':max(deg.values()), 'threshold':int(self.request.GET.get('threshold',-1) or -1)}
 
 
 @view_config(route_name='change_text')
@@ -124,4 +124,4 @@ def reset_text(request):
 
 @view_config(route_name='main', renderer='main.mak')
 def main(request):
-    return {'project':'ED'}
+    return {'project':'ED','prop_name':'','min':'','max':'','threshold':-1}

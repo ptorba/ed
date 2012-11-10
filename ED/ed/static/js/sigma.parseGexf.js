@@ -111,7 +111,19 @@ sigma.publicPrototype.parseGexf = function(gexfPath) {
       var attvalueNodes = nodeNode.getElementsByTagName('attvalue');
       for(k=0; k<attvalueNodes.length; k++){
         var attvalueNode = attvalueNodes[k];
-        var attr = attvalueNode.getAttribute('for');
+        var f = attvalueNode.getAttribute('for');
+        var forAttr = null;
+        for(var i=0;i<nodesAttributes.length;i++){
+        	if (nodesAttributes[i]['id']==f){
+        		forAttr = nodesAttributes[i]['title'];
+        	}
+        }
+        if (forAttr!=null){
+        	var attr = forAttr
+        }
+        else{
+        	var attr = attvalueNode.getAttribute('for');	
+        }
         var val = attvalueNode.getAttribute('value');
         node.attributes.push({attr:attr, val:val});
       }

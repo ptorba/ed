@@ -18,7 +18,6 @@ log = logging.getLogger(__name__)
 
 def generate_gexf2(g,property,default="0"):
     partitions = set([g.node[n]['partition'] for n in g.nodes()])
-    log.debug('partitions: %s',partitions)
     colors = {}
     for p in partitions:
         colors[p] = {'r':str(random.randint(0,255)), 'g':str(random.randint(0,255)), 'b':str(random.randint(0,255)) }
@@ -28,7 +27,7 @@ def generate_gexf2(g,property,default="0"):
         g.node[n]['viz']['color']=colors[g.node[n]['partition']]
         g.node[n]['viz']['size']=g.node[n][property]
     
-    nx.write_gexf(g,pkg_resources.resource_filename('ed','static/graphs/test.gexf'))
+    nx.write_gexf(g,pkg_resources.resource_filename('ed','static/graphs/test.gexf'),version='1.2draft')
     
     
 def get_words(text):

@@ -5,7 +5,6 @@
 		<script type="text/javascript" src="${request.static_url('ed:static/js/sigma.concat.js')}"></script>
 		<script type="text/javascript" src="${request.static_url('ed:static/js/sigma.parseGexf.js')}"></script>
 		<script type="text/javascript" src="${request.static_url('ed:static/js/sigma.forceatlas2.js')}"></script>
-		
 	</head>
 		
 	<body>
@@ -13,11 +12,23 @@
 		<p>Hello ${project}</p>
 		<p>Size based on:</p>
 		<ul>
-		<li><a href="/count">count</a></li>
-		<li><a href="/betweenness">betweenness</a></li>
+		<li><form id='count' action="/count">
+			<input type="text" name="threshold"/>
+			<input type="submit" value="count"/>
+		</form></li>
+		<li><form id='betweenness' action="/betweenness">
+			<input type="text" name="threshold"/>
+			<input type="submit" value="betweenness"/>
+		</form></li>
 		<li><a href="/random">random</a></li>
-		<li><a href="/page_rank">page rank</a></li>
-		<li><a href="/degree">degree</a></li>
+				<li><form id='page_rank' action="/page_rank">
+			<input type="text" name="threshold"/>
+			<input type="submit" value="page_rank"/>
+		</form></li>
+		<li><form id='degree' action="/degree">
+			<input type="text" name="threshold"/>
+			<input type="submit" value="degree"/>
+		</form></li>
 		</ul>
 		<form id='text-change' method='POST' action='/change_text'>
 			<textarea name="text" rows='20' cols='60'>${request.context.text if hasattr(request.context,'text') else ''}</textarea>
@@ -26,7 +37,13 @@
 		<form id='text-reset' method='POST' action='/reset_text'>
 			<input type='submit' value='Reset text'/>
 		</form>
+		<p>
+			Property: ${prop_name}<br/>
+			Max: ${max}<br/>
+			Min: ${min}<br/>
+		</p>
 		</div>
+		
 		<div id='visualize-wrapper' style="float:right;">
 			
 		<div id='sigma'>
@@ -82,6 +99,19 @@
 					}).draw(2,2,2);
 				});
 			 
+			
+			sigInst.iterNodes(function(n){
+				 var attr = n['attr']['attributes']
+				 for (var i in attr){
+				 //	alert(i);
+				 }
+				 
+				 attr.map(function(o){
+				 	if (o.attr=='${prop_name}' && o.val<=${threshold}){
+				 		n.hidden=1;
+				 	}
+					});
+			});
 			 
 			// Draw the graph :
 			sigInst.draw();
