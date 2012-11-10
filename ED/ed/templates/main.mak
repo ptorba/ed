@@ -9,6 +9,7 @@
 	</head>
 		
 	<body>
+		<div style="float:left;">
 		<p>Hello ${project}</p>
 		<p>Size based on:</p>
 		<ul>
@@ -25,10 +26,15 @@
 		<form id='text-reset' method='POST' action='/reset_text'>
 			<input type='submit' value='Reset text'/>
 		</form>
+		</div>
+		<div id='visualize-wrapper' style="float:right;">
+			
 		<div id='sigma'>
 			
 		</div>
-		<div class='weird'></div>
+		<input type="submit" id='startfa' value="Start ForceAtlas2"/>
+		<input type="submit" id='stopfa' value="Stop ForceAtlas2"/>
+		</div>
 	</body>
 	<script type="text/javascript">
 		function init() {
@@ -82,10 +88,21 @@
 			
 			
 			//start ForceAtlas
+			
 			sigInst.startForceAtlas2();
 			setTimeout(function() {
 				sigInst.stopForceAtlas2();
-			},5000); 
+			},5000);
+			
+			function startForceAtlas() {
+				sigInst.startForceAtlas2();
+			} 
+			function stopForceAtlas() {
+				sigInst.stopForceAtlas2();
+			}
+			
+			document.getElementById('startfa').addEventListener('click',startForceAtlas,false);
+			document.getElementById('stopfa').addEventListener('click',stopForceAtlas,false);
 		}
 			 
 		if (document.addEventListener) {
