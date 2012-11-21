@@ -18,11 +18,13 @@ class GraphController(object):
             log.debug('exception: %s',e)
             text = urllib2.urlopen(request.static_url('ed:static/texts/test.txt')).read().decode('UTF-8')
         
-        self.words = get_words(text)
-        log.debug('words: %s',self.words)
+        
+        log.debug('ngrams: %s',request.GET.get('ngrams',None))
+        self.words = get_pairs(text) if request.GET.get('ngrams',None) else get_words(text)
+        #log.debug('words: %s',self.words)
         self.graph = generate_graph(self.words) 
         self.partitioned_graph = best_partition(self.graph)
-        log.debug('self.partitioned_graph: %s',self.partitioned_graph)
+        #log.debug('self.partitioned_graph: %s',self.partitioned_graph)
         for n in self.graph.nodes():
             self.graph.node[n]['partition']=self.partitioned_graph[n]
         self.request = request
@@ -56,13 +58,14 @@ class BetweenController(GraphController):
         GraphController.__init__(self,request)
         
     def __call__(self):
-        betweenness = nx.betweenness_centrality(self.graph)
-        
+        betweenness = nx.betweenness_centrality(self.graph,weight='weight' if self.request.GET.get('weighted',None) else None)
+        log.debug("weighted: %s",self.request.GET.get('weighted',None))
         for n in self.graph.nodes():
             self.graph.node[n]['betweenness']=betweenness[n]
             
         generate_gexf2(self.graph,'betweenness')
         return {'project':'ED','prop_name':'betweenness','min':min(betweenness.values()),'max':max(betweenness.values()),'threshold':float(self.request.GET.get('threshold',-1) or -1)}
+
     
     
 @view_config(route_name='random', renderer='main.mak')
@@ -84,12 +87,14 @@ class PageRankController(GraphController):
         GraphController.__init__(self,request)
         
     def __call__(self):
-        page_rank = nx.pagerank(self.graph)
+        page_rank = nx.pagerank(self.graph,weight='weight' if self.request.GET.get('weighted',None) else None)
         for n in self.graph.nodes():
             self.graph.node[n]['page_rank']=page_rank[n]
             
         generate_gexf2(self.graph,'page_rank')
         return {'project':'ED','prop_name':'page_rank','min':min(page_rank.values()),'max':max(page_rank.values()),'threshold':float(self.request.GET.get('threshold',-1) or -1)}
+    
+
     
 @view_config(route_name='degree', renderer='main.mak')
 class DegreeController(GraphController):

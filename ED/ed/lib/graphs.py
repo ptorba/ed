@@ -44,18 +44,27 @@ def get_words(text):
     
     return words_stemmed
 
+
+def get_pairs(text):
+    words = get_words(text)
+    pairs = ngrams(words,2)
+    return pairs
     
+    
+    
+
 def generate_graph(words_stemmed):
-    edges = set([])
+    edges = {}
     for i in range(2,6):
         ns = ngrams(words_stemmed,i)
         for ngram in ns:
-            s = set([i for i in itertools.combinations(ngram,2)])
-            edges = edges.union(s)
+            pairs = [i for i in itertools.combinations(ngram,2)]
+            for p in pairs:
+                edges[p] = edges.get(p,0)+1
     
     g = nx.Graph()
     
     g.add_nodes_from(words_stemmed)
-    g.add_edges_from(edges)
+    g.add_edges_from([(k[0],k[1],{'weight':v}) for k,v in edges.iteritems()])
     
     return g

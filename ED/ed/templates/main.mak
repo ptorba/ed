@@ -18,15 +18,19 @@
 		</form></li>
 		<li><form id='betweenness' action="/betweenness">
 			<input type="text" name="threshold"/>
+			<input type='checkbox' name="weighted">Weighted</input>
+			<input type='checkbox' name="ngrams">Ngrams</input>
 			<input type="submit" value="betweenness"/>
 		</form></li>
-		<li><a href="/random">random</a></li>
 				<li><form id='page_rank' action="/page_rank">
 			<input type="text" name="threshold"/>
+			<input type='checkbox' name="weighted">Weighted</input>
+			<input type='checkbox' name="ngrams">Ngrams</input>
 			<input type="submit" value="page_rank"/>
 		</form></li>
 		<li><form id='degree' action="/degree">
 			<input type="text" name="threshold"/>
+			<input type='checkbox' name="ngrams">Ngrams</input>
 			<input type="submit" value="degree"/>
 		</form></li>
 		</ul>
