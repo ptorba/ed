@@ -46,6 +46,21 @@
 			Max: ${max}<br/>
 			Min: ${min}<br/>
 		</p>
+		<table>
+			<tr>
+				<th>Partition</th><th>Node</th><th>${prop_name}</th>
+			</tr>
+			% for k,v in request.context.partitions.iteritems():
+				<tr>
+					<td>${k}</td><td></td><td></td>
+				</tr>
+				% for item in v[:5]:
+					<tr>
+						<td>${k}</td><td>${item[0]}</td><td>${item[1]}</td>
+					</tr>
+				% endfor
+			% endfor
+		</table>
 		</div>
 		
 		<div id='visualize-wrapper' style="float:right;">
@@ -100,16 +115,18 @@
 					e.hidden = 0;
 					}).iterNodes(function(n){
 						n.hidden = 0;
+						var attr = n['attr']['attributes']
+				 		attr.map(function(o){
+				 			if (o.attr=='${prop_name}' && o.val<=${threshold}){
+				 				n.hidden=1;
+				 			}
+					});
 					}).draw(2,2,2);
 				});
 			 
 			
 			sigInst.iterNodes(function(n){
 				 var attr = n['attr']['attributes']
-				 for (var i in attr){
-				 //	alert(i);
-				 }
-				 
 				 attr.map(function(o){
 				 	if (o.attr=='${prop_name}' && o.val<=${threshold}){
 				 		n.hidden=1;

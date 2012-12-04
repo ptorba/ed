@@ -7,7 +7,7 @@ import pkg_resources
 import os
 from lib.community import best_partition
 log = logging.getLogger(__name__)
-
+from operator import itemgetter
 
 
 class GraphController(object):
@@ -21,8 +21,10 @@ class GraphController(object):
         
         log.debug('ngrams: %s',request.GET.get('ngrams',None))
         self.words = get_pairs(text) if request.GET.get('ngrams',None) else get_words(text)
+        
         #log.debug('words: %s',self.words)
         self.graph = generate_graph(self.words) 
+        #self.graph = generate_graph_synsets(get_synsets(text)) 
         self.partitioned_graph = best_partition(self.graph)
         #log.debug('self.partitioned_graph: %s',self.partitioned_graph)
         for n in self.graph.nodes():
@@ -60,10 +62,16 @@ class BetweenController(GraphController):
     def __call__(self):
         betweenness = nx.betweenness_centrality(self.graph,weight='weight' if self.request.GET.get('weighted',None) else None)
         log.debug("weighted: %s",self.request.GET.get('weighted',None))
+        partitions = {}
         for n in self.graph.nodes():
             self.graph.node[n]['betweenness']=betweenness[n]
+            partitions[self.graph.node[n]['partition']] = partitions.get(self.graph.node[n]['partition'],[])+[(n,betweenness[n])]
             
         generate_gexf2(self.graph,'betweenness')
+        
+        for k,v in partitions.iteritems():
+            v.sort(key=itemgetter(1),reverse=True)
+        self.request.context.partitions = partitions
         return {'project':'ED','prop_name':'betweenness','min':min(betweenness.values()),'max':max(betweenness.values()),'threshold':float(self.request.GET.get('threshold',-1) or -1)}
 
     
@@ -88,10 +96,16 @@ class PageRankController(GraphController):
         
     def __call__(self):
         page_rank = nx.pagerank(self.graph,weight='weight' if self.request.GET.get('weighted',None) else None)
+        partitions = {}
         for n in self.graph.nodes():
             self.graph.node[n]['page_rank']=page_rank[n]
+            partitions[self.graph.node[n]['partition']] = partitions.get(self.graph.node[n]['partition'],[])+[(n,page_rank[n])]
             
         generate_gexf2(self.graph,'page_rank')
+        
+        for k,v in partitions.iteritems():
+            v.sort(key=itemgetter(1),reverse=True)
+        self.request.context.partitions = partitions
         return {'project':'ED','prop_name':'page_rank','min':min(page_rank.values()),'max':max(page_rank.values()),'threshold':float(self.request.GET.get('threshold',-1) or -1)}
     
 
