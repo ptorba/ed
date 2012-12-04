@@ -2,7 +2,7 @@ from lxml import etree
 from nltk.stem import WordNetLemmatizer
 
 from nltk.tokenize import *
-from nltk.corpus import stopwords
+from nltk.corpus import stopwords, wordnet
 
 from nltk.util import ngrams
 import sys
@@ -45,6 +45,11 @@ def get_words(text):
     return words_stemmed
 
 
+def get_synsets(text):
+    words = get_words(text)
+    return [{'word' : w,'synsets': set(wordnet.synsets(w))} for w in words]
+    
+
 def get_pairs(text):
     words = get_words(text)
     pairs = ngrams(words,2)
@@ -58,9 +63,9 @@ def generate_graph(words_stemmed):
     for i in range(2,6):
         ns = ngrams(words_stemmed,i)
         for ngram in ns:
-            pairs = [i for i in itertools.combinations(ngram,2)]
+            pairs = [x for x in itertools.combinations(ngram,2)]
             for p in pairs:
-                edges[p] = edges.get(p,0)+1
+                edges[p] = edges.get(p,0)+1.0/i
     
     g = nx.Graph()
     
@@ -68,3 +73,17 @@ def generate_graph(words_stemmed):
     g.add_edges_from([(k[0],k[1],{'weight':v}) for k,v in edges.iteritems()])
     
     return g
+
+def generate_graph_synsets(word_synsets):
+    edges = set([])
+    pairs = [x for x in itertools.combinations(word_synsets,2)]
+    for p in pairs:
+        if p[0]['synsets'] & p[1]['synsets']:
+            edges.add((p[0]['word'],p[1]['word']))
+    
+    g = nx.Graph()
+    
+    g.add_nodes_from([x['word'] for x in word_synsets])
+    g.add_edges_from(edges)
+    return g
+        
