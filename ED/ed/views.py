@@ -31,6 +31,9 @@ class GraphController(object):
             self.graph.node[n]['partition']=self.partitioned_graph[n]
         self.request = request
         self.request.context.text = text
+        tl = os.listdir(pkg_resources.resource_filename('ed','static/prepared'))
+        log.debug(tl)
+        self.request.context.text_list = tl
         
         
     def insert_measure(self,name,values):
@@ -111,29 +114,33 @@ class DegreeController(GraphController):
         
     def __call__(self):
         deg = self.graph.degree()
-        for n in self.graph.nodes():
-            self.graph.node[n]['degree']=deg[n]
-            
-        generate_gexf2(self.graph,'degree')
+        self.insert_measure('degree', deg)
         return {'project':'ED','prop_name':'degree','min':min(deg.values()),'max':max(deg.values()), 'threshold':int(self.request.GET.get('threshold',-1) or -1)}
 
 
 @view_config(route_name='change_text')
 def change_text(request):
-    log.debug('change_text')
-    text = request.params.get('text')
+    log.debug('change_text, %s',request.params)
+
+    
+    if request.params.get('text_choice',None):
+        text = open(pkg_resources.resource_filename('ed','static/prepared/%s'%request.params.get('text_choice')),'r').read()
+    else:
+        text = request.params.get('text')
+    
     f = open(pkg_resources.resource_filename('ed','static/texts/user_input.txt'),'w')
+    
     f.write(text)
     request.context.text = text
     f.close()
     log.debug('change_text end')
-    return HTTPFound(route_url('count',request))
+    return HTTPFound(route_url('betweenness',request))
 
 @view_config(route_name='reset_text')
 def reset_text(request):
     log.debug('reset text')
     os.remove(pkg_resources.resource_filename('ed','static/texts/user_input.txt'))
-    return HTTPFound(route_url('count',request))
+    return HTTPFound(route_url('betweenness',request))
 
 @view_config(route_name='main', renderer='main.mak')
 def main(request):
