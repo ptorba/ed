@@ -6,16 +6,16 @@
 		<script type="text/javascript" src="${request.static_url('ed:static/js/sigma.parseGexf.js')}"></script>
 		<script type="text/javascript" src="${request.static_url('ed:static/js/sigma.forceatlas2.js')}"></script>
 	</head>
-		
+	<style>
+		input[type="text"] {
+			width: 40px;
+		}
+	</style>
 	<body>
-		<div style="float:left;">
+		<div style="float:left; width:500px;">
 		<p>Hello ${project}</p>
 		<p>Size based on:</p>
 		<ul>
-		<li><form id='count' action="/count">
-			<input type="text" name="threshold"/>
-			<input type="submit" value="count"/>
-		</form></li>
 		<li><form id='betweenness' action="/betweenness">
 			<input type="text" name="threshold"/>
 			<input type='checkbox' name="weighted">Weighted</input>
@@ -35,7 +35,12 @@
 		</form></li>
 		</ul>
 		<form id='text-change' method='POST' action='/change_text'>
-			<textarea name="text" rows='20' cols='60'>${request.context.text if hasattr(request.context,'text') else ''}</textarea>
+			<textarea name="text" rows='20' cols='60'>${request.context.text if hasattr(request.context,'text') else ''}</textarea><br/>
+			% if hasattr(request.context,'text_list'):
+			% for text in request.context.text_list:
+				<input type="radio" name="text_choice" value="${text}">${text}</input><br/>
+			% endfor
+			% endif
 			<input type='submit' value='Send'/>
 		</form>
 		<form id='text-reset' method='POST' action='/reset_text'>
@@ -46,6 +51,7 @@
 			Max: ${max}<br/>
 			Min: ${min}<br/>
 		</p>
+		% if hasattr(request.context,'partitions'):
 		<table>
 			<tr>
 				<th>Partition</th><th>Node</th><th>${prop_name}</th>
@@ -61,6 +67,7 @@
 				% endfor
 			% endfor
 		</table>
+		% endif
 		</div>
 		
 		<div id='visualize-wrapper' style="float:right;">
