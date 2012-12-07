@@ -29,7 +29,9 @@ class GraphController(object):
         
         
         #log.debug('words: %s',self.words)
-        self.graph = generate_graph(self.words) 
+        self.graph = generate_graph2(self.words) if request.GET.get('alg',None) else generate_graph(self.words)
+        
+        
         #self.graph = generate_graph_synsets(get_synsets(text)) 
         self.partitioned_graph = best_partition(self.graph)
         #log.debug('self.partitioned_graph: %s',self.partitioned_graph)

@@ -40,7 +40,7 @@ def get_words(text):
     
     wnl = WordNetLemmatizer()
     
-    words_stemmed = [(wnl.lemmatize(x)) for x in words]
+    words_stemmed = [wnl.lemmatize(x) for x in words]
     
     return words_stemmed
 
@@ -59,18 +59,21 @@ def get_pairs(text,i=2):
     
 def get_pairsTo(text,i=2):
     words = get_words(text)
-    pairs = get_words(text)
+    pairs = map(lambda x: (x,), get_words(text))
+    #print pairs
     for j in xrange(2,i+1):
 	pairs.extend(ngrams(words,j))
+    #print pairs
     return pairs
     
     
-def generate_graph23(words_stemmed):
+def generate_graph2(words_stemmed):
     edges = {}
     for i in words_stemmed:
 	for j in words_stemmed:
+	    #print i,j
 	    if len(set(i)&set(j))>0:
-		#print i, j, (set(i)|set(j)), (set(i)&set(j))
+		
 		p = (i, j)
 		edges[p] = edges.get(p,0) + 1.0/(len(i)+len(j))
     

@@ -21,6 +21,7 @@
 			<input type='checkbox' name="weighted">Weighted</input>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
+			<input type='checkbox' name="alg">Alg2</input>
 			<input type="submit" value="betweenness"/>
 		</form></li>
 				<li><form id='page_rank' action="/page_rank">
@@ -28,12 +29,14 @@
 			<input type='checkbox' name="weighted">Weighted</input>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
+			<input type='checkbox' name="alg">Alg2</input>
 			<input type="submit" value="page_rank"/>
 		</form></li>
 		<li><form id='degree' action="/degree">
 			<input type="text" name="threshold"/>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
+			<input type='checkbox' name="alg">Alg2</input>
 			<input type="submit" value="degree"/>
 		</form></li>
 		</ul>
