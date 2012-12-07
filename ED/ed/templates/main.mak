@@ -50,6 +50,7 @@
 			Property: ${prop_name}<br/>
 			Max: ${max}<br/>
 			Min: ${min}<br/>
+			Avg: ${request.context.avg if hasattr(request.context,'avg') else ''}
 		</p>
 		% if hasattr(request.context,'partitions'):
 		<table>
@@ -58,7 +59,7 @@
 			</tr>
 			% for k,v in request.context.partitions.iteritems():
 				<tr>
-					<td>${k}</td><td></td><td></td>
+					<td>${k} (size: ${len(request.context.partitions[k])})</td><td></td><td></td>
 				</tr>
 				% for item in v[:5]:
 					<tr>
@@ -87,13 +88,13 @@
 			defaultLabelSize: 14,
 			defaultLabelBGColor: '#fff',
 			defaultLabelHoverColor: '#000',
-			labelThreshold: 6,
+			labelThreshold: 4,
 			defaultEdgeType: 'curve',
 			}).graphProperties({
 			minNodeSize: 1,
 			maxNodeSize: 20,
 			minEdgeSize: 0.1,
-			maxEdgeSize: 4
+			maxEdgeSize: 1
 			}).mouseProperties({
 			maxRatio: 32
 			});

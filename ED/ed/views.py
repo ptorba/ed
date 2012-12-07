@@ -115,6 +115,7 @@ class DegreeController(GraphController):
     def __call__(self):
         deg = self.graph.degree()
         self.insert_measure('degree', deg)
+        self.request.context.avg = sum(deg.values())/len(deg.values())
         return {'project':'ED','prop_name':'degree','min':min(deg.values()),'max':max(deg.values()), 'threshold':int(self.request.GET.get('threshold',-1) or -1)}
 
 
