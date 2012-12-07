@@ -40,7 +40,7 @@ def get_words(text):
     
     wnl = WordNetLemmatizer()
     
-    words_stemmed = [wnl.lemmatize(x) for x in words]
+    words_stemmed = [(wnl.lemmatize(x)) for x in words]
     
     return words_stemmed
 
@@ -50,13 +50,36 @@ def get_synsets(text):
     return [{'word' : w,'synsets': set(wordnet.synsets(w))} for w in words]
     
 
-def get_pairs(text):
+def get_pairs(text,i=2):
     words = get_words(text)
-    pairs = ngrams(words,2)
+    pairs = ngrams(words,i)
+    #pairs.extend(ngrams(words,3))
+    #pairs.extend(ngrams(words,2))
+    return pairs
+    
+def get_pairsTo(text,i=2):
+    words = get_words(text)
+    pairs = get_words(text)
+    for j in xrange(2,i+1):
+	pairs.extend(ngrams(words,j))
     return pairs
     
     
+def generate_graph23(words_stemmed):
+    edges = {}
+    for i in words_stemmed:
+	for j in words_stemmed:
+	    if len(set(i)&set(j))>0:
+		#print i, j, (set(i)|set(j)), (set(i)&set(j))
+		p = (i, j)
+		edges[p] = edges.get(p,0) + 1.0/(len(i)+len(j))
     
+    g = nx.Graph()
+    
+    g.add_nodes_from(words_stemmed)
+    g.add_edges_from([(k[0],k[1],{'weight':v}) for k,v in edges.iteritems()])
+    
+    return g
 
 def generate_graph(words_stemmed):
     edges = {}

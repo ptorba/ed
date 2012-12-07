@@ -20,7 +20,13 @@ class GraphController(object):
         
         
         log.debug('ngrams: %s',request.GET.get('ngrams',None))
-        self.words = get_pairs(text) if request.GET.get('ngrams',None) else get_words(text)
+        if request.GET.get('ngrams',None):
+	    self.words = get_pairs(text, int(request.GET.get('ngrams')))
+	elif request.GET.get('1tongrams',None):
+	    self.words = get_pairsTo(text, int(request.GET.get('1tongrams')))
+	else:
+	    self.words = get_words(text)
+        
         
         #log.debug('words: %s',self.words)
         self.graph = generate_graph(self.words) 
