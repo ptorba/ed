@@ -21,6 +21,7 @@
 			<input type='checkbox' name="weighted">Weighted</input>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
+			<input type='checkbox' name="sentences">Sentences</input>
 			<input type='checkbox' name="alg">Alg2</input>
 			<input type="submit" value="betweenness"/>
 		</form></li>
@@ -29,6 +30,7 @@
 			<input type='checkbox' name="weighted">Weighted</input>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
+			<input type='checkbox' name="sentences">Sentences</input>
 			<input type='checkbox' name="alg">Alg2</input>
 			<input type="submit" value="page_rank"/>
 		</form></li>
@@ -36,6 +38,7 @@
 			<input type="text" name="threshold"/>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
+			<input type='checkbox' name="sentences">Sentences</input>
 			<input type='checkbox' name="alg">Alg2</input>
 			<input type="submit" value="degree"/>
 		</form></li>
@@ -69,7 +72,7 @@
 				</tr>
 				% for item in v[:5]:
 					<tr>
-						<td>${k}</td><td>${item[0]}</td><td>${item[1]}</td>
+						<td>${k}</td><td>${" ".join(item[0])}</td><td>${item[1]}</td>
 					</tr>
 				% endfor
 			% endfor

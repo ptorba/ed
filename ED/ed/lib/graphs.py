@@ -3,6 +3,7 @@ from nltk.stem import WordNetLemmatizer
 
 from nltk.tokenize import *
 from nltk.corpus import stopwords, wordnet
+import nltk.data
 
 from nltk.util import ngrams
 import sys
@@ -29,6 +30,28 @@ def generate_gexf2(g,property,default="0"):
     
     nx.write_gexf(g,pkg_resources.resource_filename('ed','static/graphs/test.gexf'),version='1.2draft')
     
+def get_sentences(text):
+    s = nltk.data.load('tokenizers/punkt/english.pickle')
+    sentences = s.tokenize(text)
+    stoplist = set(stopwords.words('english'))
+    
+    new = []
+    
+    #words = RegexpTokenizer(r'\b[a-z]+\b').tokenize(text)
+    
+    wnl = WordNetLemmatizer()
+    
+    for words in sentences:
+	words = RegexpTokenizer(r'\b[a-z]+\b').tokenize(words)
+	#words = [x for x in words if x not in stoplist]
+	words = [wnl.lemmatize(x) for x in words]
+	new.append(tuple(words))
+    
+    
+    
+    #words_stemmed = [wnl.lemmatize(x) for x in words]
+    
+    return new
     
 def get_words(text):
     
@@ -75,7 +98,7 @@ def generate_graph2(words_stemmed):
 	    if len(set(i)&set(j))>0:
 		
 		p = (i, j)
-		edges[p] = edges.get(p,0) + 1.0/(len(i)+len(j))
+		edges[p] = edges.get(p,0) + float(len(set(i)&set(j)))/(len(i)+len(j))
     
     g = nx.Graph()
     

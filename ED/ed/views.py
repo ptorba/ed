@@ -24,6 +24,8 @@ class GraphController(object):
 	    self.words = get_pairs(text, int(request.GET.get('ngrams')))
 	elif request.GET.get('1tongrams',None):
 	    self.words = get_pairsTo(text, int(request.GET.get('1tongrams')))
+	elif request.GET.get('sentences',None):
+	    self.words = get_sentences(text)
 	else:
 	    self.words = get_words(text)
         
