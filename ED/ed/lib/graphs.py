@@ -59,7 +59,7 @@ def get_words(text):
     
     stoplist = set(stopwords.words('english'))
     
-    words = [x for x in words if x not in stoplist]
+    words = [x for x in words if x not in stoplist and x!='though']
     
     wnl = WordNetLemmatizer()
     
@@ -89,6 +89,18 @@ def get_pairsTo(text,i=2):
     #print pairs
     return pairs
     
+
+def word_similarity(a,b):
+    ass = wordnet.synsets(a)
+    bss = wordnet.synsets(b)
+    
+    maxi = 0.0
+    for sa in ass:
+	for sb in bss:
+	    maxi = max(maxi,sa.path_similarity(sb))
+    
+    return maxi
+    
     
 def generate_graph2(words_stemmed):
     edges = {}
@@ -107,9 +119,35 @@ def generate_graph2(words_stemmed):
     
     return g
 
+
+def generate_graph3(words_stemmed):
+    d = {}
+  
+    edges = {}
+    for it in words_stemmed:
+	for i in it:
+	    for jt in words_stemmed:
+		for j in jt:
+		    p = (it, jt)
+		    p2 = (i, j)
+		    if p2 in d:
+			sim = d[p2]
+		    else:
+			sim = word_similarity(i,j)
+			d[p2] = sim
+		    if sim>0.0:
+			edges[p] = edges.get(p,0) + sim
+    
+    g = nx.Graph()
+    
+    g.add_nodes_from(words_stemmed)
+    g.add_edges_from([(k[0],k[1],{'weight':v}) for k,v in edges.iteritems()])
+    
+    return g
+
 def generate_graph(words_stemmed):
     edges = {}
-    for i in range(2,6):
+    for i in range(2,14):
         ns = ngrams(words_stemmed,i)
         for ngram in ns:
             pairs = [x for x in itertools.combinations(ngram,2)]

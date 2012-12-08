@@ -12,34 +12,37 @@
 		}
 	</style>
 	<body>
-		<div style="float:left; width:500px;">
+		<div style="float:left; width:800px;">
 		<p>Hello ${project}</p>
 		<p>Size based on:</p>
 		<ul>
 		<li><form id='betweenness' action="/betweenness">
 			<input type="text" name="threshold"/>
-			<input type='checkbox' name="weighted">Weighted</input>
+			<label><input type='checkbox' name="weighted">Weighted</input></label>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
-			<input type='checkbox' name="sentences">Sentences</input>
-			<input type='checkbox' name="alg">Alg2</input>
+			<label><input type='checkbox' name="sentences">Sentences</input></label>
+			<label><input type='checkbox' name="alg">Alg2</input></label>
+			<label><input type='checkbox' name="wordnet">WordNet</input></label>
 			<input type="submit" value="betweenness"/>
 		</form></li>
 				<li><form id='page_rank' action="/page_rank">
 			<input type="text" name="threshold"/>
-			<input type='checkbox' name="weighted">Weighted</input>
+			<label><input type='checkbox' name="weighted">Weighted</input></label>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
-			<input type='checkbox' name="sentences">Sentences</input>
-			<input type='checkbox' name="alg">Alg2</input>
+			<label><input type='checkbox' name="sentences">Sentences</input></label>
+			<label><input type='checkbox' name="alg">Alg2</input></label>
+			<label><input type='checkbox' name="wordnet">WordNet</input></label>
 			<input type="submit" value="page_rank"/>
 		</form></li>
 		<li><form id='degree' action="/degree">
 			<input type="text" name="threshold"/>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
-			<input type='checkbox' name="sentences">Sentences</input>
-			<input type='checkbox' name="alg">Alg2</input>
+			<label><input type='checkbox' name="sentences">Sentences</input></label>
+			<label><input type='checkbox' name="alg">Alg2</input></label>
+			<label><input type='checkbox' name="wordnet">WordNet</input></label>
 			<input type="submit" value="degree"/>
 		</form></li>
 		</ul>

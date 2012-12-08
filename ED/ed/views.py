@@ -31,7 +31,13 @@ class GraphController(object):
         
         
         #log.debug('words: %s',self.words)
-        self.graph = generate_graph2(self.words) if request.GET.get('alg',None) else generate_graph(self.words)
+        if request.GET.get('alg',None):
+	    self.graph = generate_graph2(self.words)
+	elif request.GET.get('wordnet',None):
+	    self.graph = generate_graph3(self.words)
+	else:
+	    self.graph = generate_graph(self.words)
+        #self.graph = generate_graph2(self.words) if request.GET.get('alg',None) else generate_graph(self.words)
         
         
         #self.graph = generate_graph_synsets(get_synsets(text)) 
