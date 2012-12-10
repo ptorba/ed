@@ -17,7 +17,6 @@
 		<p>Size based on:</p>
 		<ul>
 		<li><form id='betweenness' action="/betweenness">
-			<input type="text" name="threshold"/>
 			<label><input type='checkbox' name="weighted">Weighted</input></label>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
@@ -26,8 +25,7 @@
 			<label><input type='checkbox' name="wordnet">WordNet</input></label>
 			<input type="submit" value="betweenness"/>
 		</form></li>
-				<li><form id='page_rank' action="/page_rank">
-			<input type="text" name="threshold"/>
+			<li><form id='page_rank' action="/page_rank">
 			<label><input type='checkbox' name="weighted">Weighted</input></label>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
@@ -37,7 +35,6 @@
 			<input type="submit" value="page_rank"/>
 		</form></li>
 		<li><form id='degree' action="/degree">
-			<input type="text" name="threshold"/>
 			<input type='text' name="ngrams">Ngrams</input>
 			<input type='text' name="1tongrams">1toNgrams</input>
 			<label><input type='checkbox' name="sentences">Sentences</input></label>
@@ -75,7 +72,7 @@
 				</tr>
 				% for item in v[:5]:
 					<tr>
-						<td>${k}</td><td>${" ".join(item[0])}</td><td>${item[1]}</td>
+						<td>${k}</td><td>${" ".join(item[0]) if not isinstance(item[0], unicode) else item[0]}</td><td>${item[1]}</td>
 					</tr>
 				% endfor
 			% endfor
@@ -90,10 +87,15 @@
 		</div>
 		<input type="submit" id='startfa' value="Start ForceAtlas2"/>
 		<input type="submit" id='stopfa' value="Stop ForceAtlas2"/>
+		Threshold: <input type="text" id="threshold" value="${threshold}"/>
+		<input type="button" value="Redraw" onclick="document.getElementById('sigma').innerHTML=''; init()"/>
 		</div>
 	</body>
 	<script type="text/javascript">
 		function init() {
+			var thres = document.getElementById('threshold').value;
+
+
 			// Instanciate sigma.js and customize rendering :
 			var sigInst = sigma.init(document.getElementById('sigma')).drawingProperties({
 			defaultLabelColor: '#fff',
@@ -134,7 +136,7 @@
 						n.hidden = 0;
 						var attr = n['attr']['attributes']
 				 		attr.map(function(o){
-				 			if (o.attr=='${prop_name}' && o.val<=${threshold}){
+				 			if (o.attr=='${prop_name}' && o.val<=thres){
 				 				n.hidden=1;
 				 			}
 					});
@@ -145,7 +147,7 @@
 			sigInst.iterNodes(function(n){
 				 var attr = n['attr']['attributes']
 				 attr.map(function(o){
-				 	if (o.attr=='${prop_name}' && o.val<=${threshold}){
+				 	if (o.attr=='${prop_name}' && o.val<=thres){
 				 		n.hidden=1;
 				 	}
 					});

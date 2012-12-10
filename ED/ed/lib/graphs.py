@@ -152,6 +152,7 @@ def generate_graph(words_stemmed):
         for ngram in ns:
             pairs = [x for x in itertools.combinations(ngram,2)]
             for p in pairs:
+		print p
                 edges[p] = edges.get(p,0)+1.0/i
     
     g = nx.Graph()
