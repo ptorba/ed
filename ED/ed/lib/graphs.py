@@ -147,7 +147,7 @@ def generate_graph3(words_stemmed):
 
 def generate_graph(words_stemmed):
     edges = {}
-    for i in range(2,14):
+    for i in range(2,6):
         ns = ngrams(words_stemmed,i)
         for ngram in ns:
             pairs = [x for x in itertools.combinations(ngram,2)]
