@@ -147,7 +147,7 @@ def change_text(request):
     
     f = open(pkg_resources.resource_filename('ed','static/texts/user_input.txt'),'w')
     
-    f.write(text)
+    f.write(text.encode('utf-8'))
     request.context.text = text
     f.close()
     log.debug('change_text end')
